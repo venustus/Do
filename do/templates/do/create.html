@@ -1,0 +1,28 @@
+<h1>Create a DO Task</h1>
+
+{% if error_message %}
+    <p><strong>{{ error_message }}</strong></p>
+{% else %}
+    <p><strong>Success</strong></p>
+{% endif %}
+
+<form action="{% url 'do:create_task' %}" method="post">
+    {% csrf_token %}
+    <label for="created_by">Created By</label>
+    <input type="text" name="created_by" id="created_by"/>
+    <br/>
+
+    <label for="assigned_to">Assigned To</label>
+    <input type="text" name="assigned_to" id="assigned_to"/>
+    <br/>
+
+    <label for="title">Title</label>
+    <input type="text" name="title" id="title"/>
+    <br/>
+
+    <label for="primary_desc">Description</label>
+    <input type="textarea" name="primary_desc" id="primary_desc"/>
+    <br/>
+
+    <input type="submit" value="Create"/>
+</form>

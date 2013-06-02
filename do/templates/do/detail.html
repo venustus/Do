@@ -1,0 +1,9 @@
+<h1>{{  task.title }}</h1>
+
+Created by: {{ task.created_by.first_name }}
+Assigned to: {{ task.assigned_to.first_name }}
+Created at: {{ task.created_at }}
+Complete by: {{ task.complete_by }}
+<p>
+    {{ task.primary_desc }}
+</p>
