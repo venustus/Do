@@ -1,24 +1,143 @@
-<h1>Be a Doer!</h1>
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>Do it.</title>
+    {% load staticfiles %}
+	<link href="{% static "do/css/blitzer/jquery-ui-1.10.3.custom.css" %}" rel="stylesheet"/>
+    <link href="{% static "do/css/common.css" %}" rel="stylesheet"/>
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+	<script src="{% static "do/js/jquery-1.9.1.js" %}"></script>
+	<script src="{% static "do/js/jquery-ui-1.10.3.custom.js" %}"></script>
+    <script src="{% static "do/js/jquery.validate.min.js" %}"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // input text fields
+            $(".default_text_active").each(function() {
+                $(this).show();
+                var cur_field_id = $(this).attr("id");
+                var original_field_id = cur_field_id.substring(8);
+                $("#" + original_field_id).hide();
+                $(this).focus(function() {
+                    $(this).hide();
+                    $("#" + original_field_id).show();
+                    $("#" + original_field_id).focus();
+                });
+                $("#" + original_field_id).blur(function() {
+                    if($("#" + original_field_id).val() == "")
+                    {
+                        $("#default_" + original_field_id).show();
+                        $("#" + original_field_id).hide();
+                    }
+                });
+            });
 
-{% if error_message %}
-    <p><strong>{{ error_message }}</strong></p>
-{% else %}
-    <p><strong>Success</strong></p>
-{% endif %}
+            // form validation
+            var validator = $("#signup_form").validate({
+                rules: {
+                    useremail: {
+                        required: true,
+                        email: true
+                    },
+                    doername: {
+                        required: true
+                    },
+                    password_first: {
+                        required: true,
+                        minlength: 12
+                    },
+                    password_second: {
+                        required: true,
+                        minlength: 12,
+                        equalTo: "#password_first"
+                    }
+                },
+                messages: {
+                    useremail: {
+                        required: "Please enter a valid email address",
+                        minlength: "Please enter a valid email address"
+                    },
+                    doername: {
+                        required: "Enter your name"
+                    },
+                    password: {
+                        required: "Provide a password",
+                        minlength: jQuery.format("Enter at least {0} characters")
+                    },
+                    password_confirm: {
+                        required: "Repeat your password",
+                        minlength: jQuery.format("Enter at least {0} characters"),
+                        equalTo: "Enter the same password as above"
+                    }
+                },
+                submitHandler: function() {
+                    alert("Submitted");
+                },
+                errorClass: "form_error",
+                debug: true,
+                ignore: ".ignore"
+            });
+            $("doit").onclick(function() {
+                if ($('#signup_form').valid()) {
+                    alert("Cool");
+                } else {
+                    alert("there are some errors");
+                }
+            });
+        });
+    </script>
+</head>
 
-<form action="{% url 'do:newdoer' %}" method="post">
-    {% csrf_token %}
-    <label for="email">Username</label>
-    <input type="text" name="email" id="email"/>
-    <br/>
+<div id="do_newdoer">
+    <div id="do_main_logo">
+        <img src="{% static "do/images/do_logo_2.png" %}" alt="Do" />
+    </div>
+    <div id="do_main_signup_form">
+        <form action="{% url 'do:newdoer' %}" id="signup_form" method="post">
+            {% csrf_token %}
+            <input type="email"
+                   class="default_text"
+                   name="useremail" id="useremail"
+                   required />
+            <input type="text"
+                   class="default_text default_text_active ignore"
+                   name="default_useremail" id="default_useremail"
+                   value="Email" />
+            <br class="form_new_line"/>
+            <input type="text"
+                   class="default_text"
+                   name="doername"
+                   id="doername" required/>
+             <input type="text"
+                   class="default_text default_text_active ignore"
+                   name="default_doername" id="default_doername"
+                   value="Your name" />
+            <br class="form_new_line"/>
+            <input type="password"
+                   class="default_text"
+                   name="password_first"
+                   id="password_first" required/>
+            <input type="text"
+                   class="default_text default_text_active ignore"
+                   value="Password"
+                   name="default_password_first"
+                   id="default_password_first"/>
+            <br class="form_new_line"/>
+            <input type="password"
+                   class="default_text"
+                   name="password_second"
+                   id="password_second" required/>
+            <input type="text"
+                   class="default_text default_text_active ignore"
+                   value="Confirm Password"
+                   name="default_password_second"
+                   id="default_password_second"/>
+            <br class="form_new_line"/>
+            <button class="doitbutton" id="doit" type="submit">
+                Start Doing!
+            </button>
+        </form>
+    </div>
+</div>
 
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password"/>
-    <br/>
-
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name"/>
-    <br/>
-
-    <input type="submit" value="Sign Up"/>
-</form>
+</html>

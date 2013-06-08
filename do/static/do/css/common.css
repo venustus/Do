@@ -1,0 +1,66 @@
+
+/* basic html elements */
+
+/* input forms */
+
+.form_new_line
+{
+    clear: left;
+}
+
+.default_text
+{
+    float: left;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 8px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.default_text_active
+{
+    color: #a1a1a1;
+    display: none;
+}
+
+.form_error
+{
+    font-family: 'Titillium Web', sans-serif;
+    color: red;
+    padding: 3px;
+    font-size: 13px;
+}
+
+/* input forms end */
+
+/* basic html elements end */
+
+/* DO IT button */
+.doitbutton
+{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-family: 'Titillium Web', sans-serif;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+/* user sign up/login page */
+#do_main_logo
+{
+    float: left;
+}
+
+#do_main_signup_form
+{
+    padding-top: 150px;
+    overflow: hidden;
+}

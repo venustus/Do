@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04554822-171f-423b-a59e-87fa0a37af13" name="Default" comment="" />
+    <list default="true" id="04554822-171f-423b-a59e-87fa0a37af13" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/css/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/templates/do/newdoer.html" afterPath="$PROJECT_DIR$/do/templates/do/newdoer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/urls.py" afterPath="$PROJECT_DIR$/do/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="dolife.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/settings.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370195165504" ignored="false" />
+    <file path="/settings.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370695297840" ignored="false" />
     <file path="/views.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370198270780" ignored="false" />
-    <file path="/urls.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370196087338" ignored="false" />
+    <file path="/urls.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370697927974" ignored="false" />
     <file path="/models.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370183883957" ignored="false" />
     <file path="/home.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370198026014" ignored="false" />
     <file path="/detail.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370084838123" ignored="false" />
@@ -16,9 +23,10 @@
     <file path="/task.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370190246973" ignored="false" />
     <file path="/bug.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370190262629" ignored="false" />
     <file path="/product.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370184923422" ignored="false" />
-    <file path="/Dummy.txt" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370186653900" ignored="false" />
+    <file path="/Dummy.txt" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370689657712" ignored="false" />
     <file path="/login.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370195325011" ignored="false" />
-    <file path="/newdoer.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370195486188" ignored="false" />
+    <file path="/newdoer.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370714656454" ignored="false" />
+    <file path="/common.css" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370712859613" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,10 +46,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/do/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="16" selection-start="615" selection-end="615" vertical-scroll-proportion="0.5">
+            <state line="14" column="22" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#26#79#0" expanded="true" />
               </folding>
@@ -53,26 +61,33 @@
         <entry file="file://$PROJECT_DIR$/do/models/task.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="35" column="4" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#23#52#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/do/templates/do/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="497" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newdoer.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="newdoer.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/do/templates/do/newdoer.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="-4.1363635">
+            <state line="71" column="18" selection-start="3000" selection-end="3000" vertical-scroll-proportion="0.36969697">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/do/static/do/css/common.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="0" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../jquery/jquery-ui-1.10.3.custom/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="29" selection-start="366" selection-end="366" vertical-scroll-proportion="-5.318182">
               <folding />
             </state>
           </provider>
@@ -81,16 +96,18 @@
       <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/do/templates/do/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="10" selection-start="180" selection-end="180" vertical-scroll-proportion="-3.5454545">
-              <folding />
+            <state line="6" column="10" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1370198025000" expanded="true" signature="26:168" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/do/templates/do/create.html">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="7" selection-start="0" selection-end="748" vertical-scroll-proportion="-13.681818">
+            <state line="168" column="23" selection-start="5618" selection-end="5618" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -99,16 +116,7 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/do/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="51" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="163" column="32" selection-start="5465" selection-end="5465" vertical-scroll-proportion="0.0">
+            <state line="6" column="39" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,9 +135,7 @@
         <entry file="file://$PROJECT_DIR$/do/models/user.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="10" column="13" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#23#59#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,6 +147,9 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GitLogSettings">
     <option name="myDateState">
       <MyDateState />
@@ -149,7 +158,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/do/templates/do/detail.html" />
         <option value="$PROJECT_DIR$/do/templates/do/create.html" />
         <option value="$PROJECT_DIR$/do/models/__init__.py" />
         <option value="$PROJECT_DIR$/do/models.py" />
@@ -157,13 +165,15 @@
         <option value="$PROJECT_DIR$/urls.py" />
         <option value="$PROJECT_DIR$/do/models/bug.py" />
         <option value="$PROJECT_DIR$/do/models/user.py" />
-        <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/do/templates/do/login.html" />
-        <option value="$PROJECT_DIR$/do/templates/do/newdoer.html" />
-        <option value="$PROJECT_DIR$/do/urls.py" />
         <option value="$PROJECT_DIR$/do/models/task.py" />
         <option value="$PROJECT_DIR$/do/templates/do/home.html" />
         <option value="$PROJECT_DIR$/do/views.py" />
+        <option value="$PROJECT_DIR$/settings.py" />
+        <option value="$PROJECT_DIR$/../jquery/jquery-ui-1.10.3.custom/index.html" />
+        <option value="$PROJECT_DIR$/do/urls.py" />
+        <option value="$PROJECT_DIR$/do/static/do/css/common.css" />
+        <option value="$PROJECT_DIR$/do/templates/do/newdoer.html" />
       </list>
     </option>
   </component>
@@ -282,6 +292,54 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="do" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dolife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dolife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="do" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="do" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dolife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dolife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="do" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -294,13 +352,13 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/dependencies/django-social-auth" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -333,29 +391,6 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="dolife" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-      <method />
-    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -379,6 +414,29 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="dolife" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -397,6 +455,13 @@
       <option name="TEST_TYPE" value="TEST_SCRIPT" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="false" name="dolife" type="Python.DjangoServer" factoryName="Django server">
@@ -485,11 +550,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289689" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.6710311" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26923078" sideWeight="0.60169494" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3983051" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27332243" sideWeight="0.6728499" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3983051" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881355" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32715008" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -570,69 +635,28 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/social_auth/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.037249282">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/social_auth/db/mongoengine_models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="780" selection-end="780" vertical-scroll-proportion="0.3323782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Python/2.7/site-packages/django/utils/importlib.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="34" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file:///Library/Python/2.7/site-packages/mongoengine/django/auth.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="201" column="6" selection-start="7772" selection-end="7772" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/models/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#23#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="32" selection-start="5465" selection-end="5465" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="201" column="6" selection-start="7772" selection-end="7772" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/do/templates/do/create.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="7" selection-start="0" selection-end="748" vertical-scroll-proportion="-13.681818">
-          <folding />
+        <state line="27" column="7" selection-start="0" selection-end="748" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1370087902000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file:///Library/Python/2.7/site-packages/django/contrib/auth/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="4" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/templates/do/newdoer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="-4.1363635">
-          <folding />
-        </state>
+        <state line="73" column="4" selection-start="2561" selection-end="2561" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/do/templates/do/login.html">
@@ -651,42 +675,73 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/do/models/bug.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="56" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#23#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="51" selection-start="428" selection-end="428" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="22" column="56" selection-start="664" selection-end="664" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/do/models/task.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="4" selection-start="769" selection-end="769" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#23#52#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/do/templates/do/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="10" selection-start="180" selection-end="180" vertical-scroll-proportion="-3.5454545">
+        <state line="6" column="10" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1370198025000" expanded="true" signature="26:168" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/models/user.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="13" selection-start="271" selection-end="271" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="168" column="23" selection-start="5618" selection-end="5618" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="39" selection-start="154" selection-end="154" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/do/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="16" selection-start="615" selection-end="615" vertical-scroll-proportion="0.5">
+        <state line="14" column="22" selection-start="517" selection-end="517" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#26#79#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../jquery/jquery-ui-1.10.3.custom/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="29" selection-start="366" selection-end="366" vertical-scroll-proportion="-5.318182">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/static/do/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="0" selection-start="396" selection-end="396" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/templates/do/newdoer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="18" selection-start="3000" selection-end="3000" vertical-scroll-proportion="0.36969697">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -165,3 +165,5 @@ SOCIAL_AUTH_MODELS = 'social_auth.db.mongoengine_models'
 SOCIAL_AUTH_USER_MODEL = 'mongoengine.django.auth.User'
 
 SESSION_ENGINE = 'mongoengine.django.sessions'
+
+STATIC_URL = '/static/'
