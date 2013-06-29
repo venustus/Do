@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    {% load staticfiles %}
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="{% static "do/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet" media="screen">
+    <link href="{% static "do/datepicker/css/datepicker.css" %}" rel="stylesheet" media="screen">
+    <link href="{% static "do/css/common.css" %}" rel="stylesheet"/>
+	<script src="{% static "do/js/jquery-1.9.1.js" %}"></script>
+	<script src="{% static "do/js/jquery-ui-1.10.3.custom.js" %}"></script>
+    <script src="{% static "do/js/jquery.validate.min.js" %}"></script>
+    <script src="{% static "do/bootstrap/js/bootstrap.min.js" %}"></script>
+    <script src="{% static "do/datepicker/js/bootstrap-datepicker.js" %}"></script>
+    <script src="http://malsup.github.com/jquery.form.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("#doitdropdownlink").mouseenter(function() {
+                $("#doitdropdown").toggle();
+            });
+
+            $("#doitdropdown").mouseleave(function() {
+                $("#doitdropdown").toggle();
+            });
+            $('#task_due_date').datepicker();
+        });
+    </script>
+</head>
+<body>
+    <div id="container" class="container-fluid">
+        <div id="header" class="headerblock">
+            <div id="header_logo" class="headerelement">
+                <div class="dropdown">
+                    <a id="doitdropdownlink" class="doitdropdown" href="#">
+                        <img src="{% static "do/images/do_logo_small.png" %}" alt="Do" />
+                    </a>
+                    <div class="submenu" id="doitdropdown">
+                        <ul class="root">
+                            <li >
+                                <a href="#new_task_modal" id="new_task_modal_button" role="button" data-toggle="modal">
+                                    <i class="icon-chevron-right pull-right"></i>+ Task
+                                </a>
+                            </li>
+                            <li ><a href="#new_task_bug" ><i class="icon-chevron-right pull-right"></i>+ Bug</a></li>
+                            <li ><a href="#new_task_enhancement" ><i class="icon-chevron-right pull-right"></i>+ Enhancement</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="personal_space" class="headerelement">
+                <div id="welcome_note">
+                    <p>
+                        Welcome {{ user.email }}
+                    </p>
+                </div>
+                <div id="logout_link">
+                    <p>
+                        <a href="{% url 'do:logout' %}">Logout</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% include "do/newtask.html" %}
+        {% block main_contents %}{% endblock %}
+        {% block footer %}{% endblock %}
+    </div>
+</body>
+</html>

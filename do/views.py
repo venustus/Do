@@ -1,7 +1,10 @@
 # Create your views here.
-from django.http import HttpResponseRedirect, Http404
+
+import json
+
+from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.shortcuts import render
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from do.models.task import Task
 from do.models.user import Doer
@@ -14,12 +17,17 @@ def home(request):
         return render(request, 'do/home.html', {'all_tasks': []})
     return render(request, 'do/home.html', {'all_tasks': all_tasks})
 
+@login_required
+def logout_view(request):
+    logout(request)
+    return HttpResponseRedirect('/do/?login=true')
+
 def login_view(request):
     try:
-        username = request.POST['username']
+        username = request.POST['useremail_login']
         password = request.POST['password']
     except KeyError:
-        return render(request, 'do/login.html')
+        return render(request, 'do/newdoer.html', {'show_login_page': True})
     else:
         invalid_login = False
         user = authenticate(username=username, password=password)
@@ -32,21 +40,36 @@ def login_view(request):
                 user_account_disabled = True
         else:
             invalid_login = True
-        return render(request, 'do/login.html', {'invalid_login': invalid_login,
-                                                 'user_account_disabled': user_account_disabled})
+        return render(request, 'do/newdoer.html', {'invalid_login': invalid_login,
+                                                   'user_account_disabled': user_account_disabled,
+                                                   'show_login_page': True})
 
 def create_user(request):
     try:
-        username = request.POST['email']
-        password = request.POST['password']
-        first_name, last_name = request.POST['name'].split()
-        user = Doer.create_user(username, password, username)
-        user.first_name = first_name
-        user.last_name = last_name
-        user.save()
-        return HttpResponseRedirect('/do/home')
+        username = request.POST['useremail']
+        password = request.POST['password_first']
+        first_name, last_name = request.POST['doername'].split()
+
+        try:
+            existing_user = Doer.objects.get(email=username)
+            response_data = dict()
+            response_data['user_exists'] = 'true'
+            response_data['user_email'] = existing_user.username
+            return HttpResponse(json.dumps(response_data), mimetype='application/json')
+        except Doer.DoesNotExist:
+            user = Doer.create_user(username, password, username)
+            user.first_name = first_name
+            user.last_name = last_name
+            user.save()
+            user = authenticate(username=username, password=password)
+            login(request, user)
+            return HttpResponse('{user_exists: "false"}')
     except KeyError:
-        return render(request, 'do/newdoer.html')
+        try:
+            show_login_page = request.GET['login']
+        except KeyError:
+            return render(request, 'do/newdoer.html')
+        return render(request, 'do/newdoer.html', {'show_login_page': True})
 
 @login_required
 def task_detail(request, task_id):

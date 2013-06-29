@@ -1,9 +1,16 @@
-{% if all_tasks %}
-    <ul>
-    {% for task in all_tasks %}
-        <li><a href="{% url 'do:task_detail' task.id %}">{{ task.title }}</a></li>
-    {% endfor %}
-    </ul>
-{% else %}
-    <p>No tasks are available.</p>
-{% endif %}
+{% extends 'do/base.html' %}
+
+{% block title %}All tasks{% endblock %}
+{% block main_contents %}
+    <div id="main_contents" class="content_block">
+        {% if all_tasks %}
+        <ul>
+        {% for task in all_tasks %}
+            <li><a href="{% url 'do:task_detail' task.id %}">{{ task.title }}</a></li>
+        {% endfor %}
+        </ul>
+        {% else %}
+            <p>No tasks are available.</p>
+        {% endif %}
+    </div>
+{% endblock %}

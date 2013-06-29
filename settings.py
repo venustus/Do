@@ -157,7 +157,7 @@ AUTHENTICATION_BACKENDS = (
 GOOGLE_OAUTH2_CLIENT_ID      = ''
 GOOGLE_OAUTH2_CLIENT_SECRET  = ''
 
-LOGIN_URL          = '/do/login/'
+LOGIN_URL          = '/do/?login=true'
 LOGIN_REDIRECT_URL = '/do/home/'
 LOGIN_ERROR_URL    = '/do/loginerror/'
 
