@@ -193,5 +193,16 @@ a.doitdropdown
 
 .datepicker
 {
-    z-index: 100000;
+    z-index: 1051;
+}
+
+#new_task_modal .modal_body
+{
+    max-height: 800px;
+}
+
+#new_task_modal
+{
+    width: 900px;
+    margin: 50px 0 0 -450px;
 }

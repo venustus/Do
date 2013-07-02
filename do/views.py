@@ -72,14 +72,6 @@ def create_user(request):
         return render(request, 'do/newdoer.html', {'show_login_page': True})
 
 @login_required
-def task_detail(request, task_id):
-    try:
-        task = Task.objects.get(id=task_id)
-    except:
-        raise Http404
-    return render(request, 'do/detail.html', {'task': task})
-
-@login_required
 def create_task(request):
     try:
         created_by = Doer.objects.get(username=request.POST['created_by'])
@@ -95,3 +87,19 @@ def create_task(request):
                     primary_desc=primary_desc)
         task.save()
         return HttpResponseRedirect('/do/' + str(task.id))
+
+
+def people_search(request):
+    query_string = request.GET['q']
+    try:
+        matched_users = Doer.objects(first_name__istartswith=query_string)
+        json_response = '['
+        separator = ''
+        for user in matched_users:
+            json_response = json_response + '{"id": "' + str(user.id) + '", "name":"' + \
+                                                user.first_name + ' ' + user.last_name + '"}' + separator
+            separator = ','
+        json_response += ']'
+        return HttpResponse(json_response)
+    except KeyError:
+        return HttpResponse("[]")

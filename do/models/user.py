@@ -1,6 +1,5 @@
 __author__ = 'venkat'
 
-from django.db.models import Manager
 from mongoengine import *
 from mongoengine.django.auth import User
 from datetime import datetime

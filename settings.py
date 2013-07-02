@@ -83,6 +83,8 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
+    'less.finders.LessFinder',
+    'compressor.finders.CompressorFinder',
 )
 
 # Make this unique, and don't share it with anybody.
@@ -121,6 +123,8 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'do',
     'social_auth',
+    'less',
+    'compressor',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -167,3 +171,12 @@ SOCIAL_AUTH_USER_MODEL = 'mongoengine.django.auth.User'
 SESSION_ENGINE = 'mongoengine.django.sessions'
 
 STATIC_URL = '/static/'
+
+LESS_ROOT = '/Users/venkat/Documents/Projects/do/static/'
+LESS_EXECUTABLE = '/usr/local/bin/lessc'
+
+COMPRESS_PRECOMPILERS = (
+   ('text/less', '/usr/local/bin/lessc {infile} {outfile}'),
+)
+
+INTERNAL_IPS = ('127.0.0.1',)
