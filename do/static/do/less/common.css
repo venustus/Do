@@ -1,0 +1,203 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+body {
+    background-image: url('../images/background.gif');
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* basic html elements */
+/* input forms */
+.form_new_line {
+    clear: left;
+}
+
+input.default_text,
+textarea.default_text {
+    float: left;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 8px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    font-size: '14px';
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+input.default_text_active,
+textarea.default_text_active {
+    color: #a1a1a1;
+    display: none;
+}
+
+.form_error {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: red;
+    z-index: 1052;
+    padding-left: 3px;
+    font-size: '14px';
+    /* Internet Explorer 10 */
+
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    /* Firefox */
+
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+    /* Safari, Chrome, and Opera */
+
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    /* W3C */
+
+    display: box;
+    box-pack: center;
+    box-align: center;
+}
+
+/* input forms end */
+/* basic html elements end */
+/* DO IT button */
+.doitbutton {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-size: '14px';
+}
+
+/* user sign up/login page */
+#do_main_logo {
+    float: left;
+}
+
+#do_main_signup_form,
+#do_main_login_form {
+    padding-top: 150px;
+    overflow: hidden;
+}
+
+.message {
+    font-weight: bold;
+    font-size: 16px;
+    clear: right;
+    background-color: yellow;
+    color: black;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.headerblock {
+    clear: both;
+}
+
+.headerelement {
+    float: left;
+}
+
+#personal_space {
+    float: right;
+}
+
+.content_block {
+    clear: both;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a:link {
+    color: gray;
+}
+
+a:hover {
+    color: red;
+}
+
+a:visited {
+    color: gray;
+}
+
+.dropdown {
+    color: #555;
+    margin: 3px 0 0 0;
+    position: relative;
+    height: 60px;
+    text-align: left;
+}
+
+.submenu {
+    background: #fff;
+    position: absolute;
+    top: -32px;
+    z-index: 100;
+    display: none;
+    margin-left: 10px;
+    padding-top: 90px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+    width: 150px;
+}
+
+.dropdown li {
+    white-space: nowrap;
+}
+
+.dropdown li a {
+    color: #808080;
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    padding: 6px 10px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.dropdown li a:hover {
+    background: darkgray;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+a.doitdropdown {
+    font-size: 11px;
+    line-height: 16px;
+    color: #555;
+    position: absolute;
+    z-index: 110;
+    display: block;
+    padding: 11px 0 0 20px;
+    height: 28px;
+    margin: -11px 0 0 -10px;
+    text-decoration: none;
+    background: url(icons/arrow.png) 116px 17px no-repeat;
+    cursor: pointer;
+}
+
+.root {
+    list-style: none;
+    margin: 0px;
+    font-size: 14px;
+    padding: 11px 0 0 0px;
+}
+
+.datepicker {
+    z-index: 1051;
+}
+
+#new_task_modal .modal_body {
+    max-height: 800px;
+}
+
+#new_task_modal {
+    width: 900px;
+    margin: 50px 0 0 -450px;
+}
