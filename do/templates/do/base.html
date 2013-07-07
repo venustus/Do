@@ -4,10 +4,10 @@
     <title>{% block title %}{% endblock %}</title>
     {% load staticfiles %}
     <!-- Google Web fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'/>
 
     <!-- jquery -->
-	<script src="{% static "do/js/jquery-1.9.1.js" %}"></script>
+    <script src="{% static "do/js/jquery-1.9.1.js" %}"></script>
     <script src="{% static "do/js/jquery.validate.min.js" %}"></script>
 
     <!-- bootstrap javascript begin -->
@@ -24,75 +24,68 @@
     <!-- jquery token-input -->
     <link href="{% static "do/css/token-input.css" %}" rel="stylesheet" media="screen"/>
     <!--  datepicker -->
-    <link href="{% static "do/datepicker/css/datepicker.css" %}" rel="stylesheet" media="screen" />
+    <link href="{% static "do/datepicker/css/datepicker.css" %}" rel="stylesheet" media="screen"/>
 
-    {% load compress %}
-
-    {% if debug %}
-        <link rel="stylesheet/less" type="text/css" media="all" href="{{ STATIC_URL }}do/bootstrap/less/bootstrap.less" />
-        <link rel="stylesheet/less" type="text/css" media="all" href="{{ STATIC_URL }}do/css/token-input-bootstrap.less" />
-        <script src="{% static "do/js/less-1.3.3.min.js" %}"></script>
-    {% else %}
-        {% compress css %}
-            // This is the nifty django-compressor way to compile your less files in css
-            <link rel="stylesheet/less" type="text/css" media="all" href="{{ STATIC_URL }}do/bootstrap/less/bootstrap.less" />
-            <link rel="stylesheet/less" type="text/css" media="all" href="{{ STATIC_URL }}do/css/token-input-bootstrap.less" />
-        {% endcompress %}
-    {% endif %}
-
-    <!-- site wide common css -->
-    <link href="{% static "do/css/common.css" %}" rel="stylesheet"/>
-
+    {% include "do/css_includes.html" %}
     <script type="text/javascript">
-        $(document).ready(function() {
-            $("#doitdropdownlink").mouseenter(function() {
+        $(document).ready(function () {
+            $("#doitdropdownlink").mouseenter(function () {
                 $("#doitdropdown").toggle();
             });
 
-            $("#doitdropdown").mouseleave(function() {
+            $("#doitdropdown").mouseleave(function () {
                 $("#doitdropdown").toggle();
             });
         });
     </script>
     {% include "do/newtask_head.html" %}
+    {% include "do/form_util.html" %}
 </head>
 <body>
-    <div id="container" class="container-fluid">
-        <div id="header" class="headerblock">
-            <div id="header_logo" class="headerelement">
-                <div class="dropdown">
-                    <a id="doitdropdownlink" class="doitdropdown" href="#">
-                        <img src="{% static "do/images/do_logo_small.png" %}" alt="Do" />
-                    </a>
-                    <div class="submenu" id="doitdropdown">
-                        <ul class="root">
-                            <li >
-                                <a href="#new_task_modal" id="new_task_modal_button" role="button" data-toggle="modal">
-                                    <i class="icon-chevron-right pull-right"></i>+ Task
-                                </a>
-                            </li>
-                            <li ><a href="#new_task_bug" ><i class="icon-chevron-right pull-right"></i>+ Bug</a></li>
-                            <li ><a href="#new_task_enhancement" ><i class="icon-chevron-right pull-right"></i>+ Enhancement</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div id="personal_space" class="headerelement">
-                <div id="welcome_note">
-                    <p>
-                        Welcome {{ user.email }}
-                    </p>
-                </div>
-                <div id="logout_link">
-                    <p>
-                        <a href="{% url 'do:logout' %}">Logout</a>
-                    </p>
+<div id="container" class="container">
+    <div id="header" class="row">
+        <div id="header_logo" class="span3">
+            <div class="dropdown">
+                <a id="doitdropdownlink" class="doitdropdown" href="#">
+                    <img src="{% static "do/images/do_logo_small.png" %}" alt="Do"/>
+                </a>
+
+                <div class="submenu" id="doitdropdown">
+                    <ul class="root">
+                        <li>
+                            <a href="#new_task_modal" id="new_task_modal_button" role="button" data-toggle="modal">
+                                <i class="icon-chevron-right pull-right"></i>+ Task
+                            </a>
+                        </li>
+                        <li><a href="#new_task_bug"><i class="icon-chevron-right pull-right"></i>+ Bug</a></li>
+                        <li><a href="#new_task_enhancement"><i class="icon-chevron-right pull-right"></i>+
+                            Enhancement</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        {% include "do/newtask.html" %}
-        {% block main_contents %}{% endblock %}
-        {% block footer %}{% endblock %}
+        <div id="personal_space" class="span4">
+            <div id="welcome_note">
+                <p>
+                    Welcome {{ user.email }}
+                </p>
+            </div>
+            <div id="logout_link">
+                <p>
+                    <a href="{% url 'do:logout' %}">Logout</a>
+                </p>
+            </div>
+        </div>
     </div>
+    <div class="alert alert-danger row" id="base_info" style="display: none;">
+        <button type="button" class="close" data-dismiss="alert">&times;</button>
+        <div id="base_msg"></div>
+    </div>
+    {% include "do/newtask.html" %}
+    <div id="main_contents" class="row">
+        {% block main_contents %}{% endblock %}
+    </div>
+    {% block footer %}{% endblock %}
+</div>
 </body>
 </html>

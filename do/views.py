@@ -9,6 +9,7 @@ from django.contrib.auth.decorators import login_required
 from do.models.task import Task
 from do.models.user import Doer
 
+
 @login_required
 def home(request):
     try:
@@ -17,10 +18,21 @@ def home(request):
         return render(request, 'do/home.html', {'all_tasks': []})
     return render(request, 'do/home.html', {'all_tasks': all_tasks})
 
+
+@login_required
+def task_detail(request, task_id):
+    try:
+        task = Task.objects.get(id=task_id)
+    except Task.DoesNotExist:
+        return render(request, 'do/home.html', {'all_tasks': []})
+    return render(request, 'do/home.html', {'all_tasks': [task]})
+
+
 @login_required
 def logout_view(request):
     logout(request)
     return HttpResponseRedirect('/do/?login=true')
+
 
 def login_view(request):
     try:
@@ -44,11 +56,12 @@ def login_view(request):
                                                    'user_account_disabled': user_account_disabled,
                                                    'show_login_page': True})
 
+
 def create_user(request):
     try:
         username = request.POST['useremail']
         password = request.POST['password_first']
-        first_name, last_name = request.POST['doername'].split()
+        first_name, last_name = request.POST['doername'].split(' ', 1)
 
         try:
             existing_user = Doer.objects.get(email=username)
@@ -71,22 +84,28 @@ def create_user(request):
             return render(request, 'do/newdoer.html')
         return render(request, 'do/newdoer.html', {'show_login_page': True})
 
+
 @login_required
 def create_task(request):
+    json_response = {'status': 'failure', 'message': 'Creation of new task failed'}
     try:
-        created_by = Doer.objects.get(username=request.POST['created_by'])
-        assigned_to = Doer.objects.get(username=request.POST['assigned_to'])
-        title = request.POST['title']
-        primary_desc = request.POST['primary_desc']
+        created_by = Doer.objects.get(username=request.user.username)
+        assignees_str = request.POST['task_assignees']
+        assignees_arr = assignees_str.split(',')
+        assignees = [Doer.objects.get(id=assignee_id) for assignee_id in assignees_arr]
+        title = request.POST['task_summary']
+        primary_desc = request.POST['task_detail']
     except KeyError:
-        return render(request, 'do/create.html')
+        return HttpResponse(json.dumps(json_response))
     else:
         task = Task(title=title,
                     created_by=created_by,
-                    assignees=[assigned_to],
+                    assignees=assignees,
                     primary_desc=primary_desc)
         task.save()
-        return HttpResponseRedirect('/do/' + str(task.id))
+        json_response['status'] = 'success'
+        json_response['message'] = 'Created new task'
+        return HttpResponse(json.dumps(json_response))
 
 
 def people_search(request):
@@ -97,7 +116,7 @@ def people_search(request):
         separator = ''
         for user in matched_users:
             json_response = json_response + '{"id": "' + str(user.id) + '", "name":"' + \
-                                                user.first_name + ' ' + user.last_name + '"}' + separator
+                            user.first_name + ' ' + user.last_name + '"}' + separator
             separator = ','
         json_response += ']'
         return HttpResponse(json_response)

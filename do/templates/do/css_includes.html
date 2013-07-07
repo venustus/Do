@@ -1,0 +1,18 @@
+{% load compress %}
+{% load staticfiles %}
+
+{% if debug %}
+    <link rel="stylesheet/less" type="text/css" media="all" href="{{ STATIC_URL }}do/bootstrap/less/bootstrap.less"/>
+    <link rel="stylesheet/less" type="text/css" media="all" href="{{ STATIC_URL }}do/css/token-input-bootstrap.less"/>
+    <link rel="stylesheet/less" type="text/css" media="all" href="{{ STATIC_URL }}do/less/common.less"/>
+    <script src="{% static "do/js/less-1.3.3.min.js" %}"></script>
+{% else %}
+    {% compress css %}
+        // This is the nifty django-compressor way to compile your less files in css
+        <link rel="stylesheet/less" type="text/css" media="all"
+              href="{{ STATIC_URL }}do/bootstrap/less/bootstrap.less"/>
+        <link rel="stylesheet/less" type="text/css" media="all"
+              href="{{ STATIC_URL }}do/css/token-input-bootstrap.less"/>
+        <link rel="stylesheet/less" type="text/css" media="all" href="{{ STATIC_URL }}do/less/common.less"/>
+    {% endcompress %}
+{% endif %}

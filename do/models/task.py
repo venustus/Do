@@ -4,6 +4,7 @@ from datetime import datetime
 from mongoengine import *
 from user import Doer
 
+
 class TaskUpdate(EmbeddedDocument):
     """
     A single task update by a user.
@@ -15,6 +16,7 @@ class TaskUpdate(EmbeddedDocument):
     class Meta:
         app_label = 'do'
 
+
 class Attachment(EmbeddedDocument):
     """
     Attachments for a task
@@ -25,14 +27,17 @@ class Attachment(EmbeddedDocument):
     class Meta:
         app_label = 'do'
 
+
 class TaskStatus():
     IN_PROGRESS, COMPLETED, OVERDUE, ABORTED = range(4)
+
 
 class Task(Document):
     """
     Represents an actionable task.
     Title and primary description are required
     """
+    id = ObjectIdField()
     title = StringField(max_length=255, required=True)
     created_by = ReferenceField(Doer)
     assignees = ListField(ReferenceField(Doer))

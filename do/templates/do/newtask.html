@@ -1,46 +1,53 @@
-
 <!-- Modal -->
-<div id="new_task_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="new_task_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
         <h3 id="new-task-header">Create new task</h3>
     </div>
-    <form class="form-horizontal" id="new_task_form">
-        <div class="modal-body">
-            <div class="errorHandler"></div>
+    <div class="modal-body">
+        <form id="new_task_form" method="post" action="{% url "do:create_task" %}">
             {% csrf_token %}
-            <div class="control-group">
-                <label class="control-label" for="task_summary">What to do?</label>
-                <div class="controls">
-                    <input type="text" id="task_summary" placeholder="Describe the task in few words">
-                </div>
-            </div>
-            <div class="control-group">
-                <label class="control-label" for="task_detail">Details</label>
-                <div class="controls">
-                    <textarea rows="3" id="task_detail" placeholder="Describe the task in detail"></textarea>
-                </div>
-            </div>
-            <div class="control-group">
-                <label class="control-label" for="task_due_date">When to complete?</label>
-                <div class="controls">
-                    <div id="task_due_date" class="input-append date" data-date-format="dd-mm-yyyy" data-date="29-06-2013">
-                        <input class="span2" type="text" id="due_date" value="29-06-2013" size="16" />
-                        <span class="add-on"><i class="icon-calendar"></i></span>
-                    </div>
-                </div>
-            </div>
-            <div class="control-group">
-                <label class="control-label" for="task_assignees">Add people or teams</label>
-                <div class="controls">
-                    <input type="text" id="task_assignees" placeholder="Add People or Teams">
-                </div>
-            </div>
-
-        </div>
-        <div class="modal-footer">
-            <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-            <input class="btn btn-danger" id="new_task_create" type="submit" value="Create"/>
-        </div>
-    </form>
+            <label for="task_summary" class="form_label">Task Summary</label>
+            <input type="text"
+                   class="default_text"
+                   name="task_summary"
+                   id="task_summary"
+                   required/>
+            <input type="text"
+                   class="default_text default_text_active ignore"
+                   id="default_task_summary"
+                   value="Tell what to do in few words"/>
+            <br class="form_new_line"/>
+            <label for="task_detail" class="form_label">Details</label>
+            <textarea rows="5" cols="50"
+                      class="default_text"
+                      name="task_detail"
+                      id="task_detail"></textarea>
+            <textarea rows="5" cols="50"
+                      class="default_text default_text_active ignore"
+                      id="default_task_detail">Describe the task in detail</textarea>
+            <br class="form_new_line"/>
+            <label for="task_due_date" class="form_label">Due date</label>
+            <input type="text"
+                   class="default_text"
+                   name="task_due_date"
+                   id="task_due_date" required/>
+            <input type="text"
+                   class="default_text default_text_active ignore"
+                   value="Put a due date"
+                   id="default_task_due_date"/>
+            <br class="form_new_line"/>
+            <label for="task_detail" class="form_label">Add People or Teams. Start typing names</label>
+            <input type="text"
+                   class="default_text"
+                   name="task_assignees"
+                   placeholder="Add People or Teams"
+                   id="task_assignees" required/>
+            <br class="form_new_line"/>
+            <button class="doitbutton" id="doit" type="submit">
+                Add Task
+            </button>
+        </form>
+    </div>
 </div>

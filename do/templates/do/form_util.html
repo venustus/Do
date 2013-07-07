@@ -1,0 +1,22 @@
+<script type="text/javascript">
+    $(document).ready(function () {
+        // input text fields
+        $(".default_text_active").each(function () {
+            $(this).show();
+            var cur_field_id = $(this).attr("id");
+            var original_field_id = cur_field_id.substring(8);
+            $("#" + original_field_id).hide();
+            $(this).focus(function () {
+                $(this).hide();
+                $("#" + original_field_id).show();
+                $("#" + original_field_id).focus();
+            });
+            $("#" + original_field_id).blur(function () {
+                if ($("#" + original_field_id).val() == "") {
+                    $("#default_" + original_field_id).show();
+                    $("#" + original_field_id).hide();
+                }
+            });
+        });
+    });
+</script>
