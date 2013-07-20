@@ -4,43 +4,38 @@
                 {theme: "bootstrap",
                     zindex: "11001",
                     hintText: "Type in names of persons or teams",
-                    defaultText: "Add People or Teams"});
+                    defaultText: "add people or teams"});
         $('#task_due_date').datepicker();
         $('#new_task_form').validate({
             rules: {
                 task_summary: {
-                    minlength: 5,
+                    minlength: 1,
                     required: true
                 },
-                task_details: {
-                    required: true,
-                    email: true
+                task_detail: {
+                    minlength: 1
                 },
                 task_due_date: {
-                    minlength: 10,
-                    required: true
+                    minlength: 10
                 },
                 task_assignees: {
-                    minlength: 5,
                     required: true
                 }
             },
             messages: {
                 task_summary: {
-                    required: "Enter a summary of the task",
-                    minlength: "Enter a summary of the task"
+                    required: "enter a summary of the task",
+                    minlength: "enter a summary of the task"
                 },
-                task_details: {
-                    required: "Enter task details",
-                    minlength: "Enter task details"
+                task_detail: {
+                    minlength: "you need to describe the task in detail"
                 },
                 task_due_date: {
-                    required: "Enter a due date for the task",
-                    minlength: "Enter a due date for the task"
+                    minlength: "due date is required"
                 },
                 task_assignees: {
-                    required: "Choose people for the task",
-                    minlength: "Choose people for the task"
+                    required: "add at least one person or team",
+                    minlength: "add at least one person or team"
                 }
             },
             errorClass: "form_error",
@@ -74,14 +69,16 @@
         }
 
         // bind to the form's submit event
-        $('#new_task_form').submit(function () {
+        $('#new_task_form').submit(function (event) {
             // inside event callbacks 'this' is the DOM element so we first
             // wrap it in a jQuery object and then invoke ajaxSubmit
+            if (!$("#new_task_form").valid()) {
+                return;
+            }
             var selectedAssignees = $("#task_assignees").tokenInput("get");
             var keys = getKeys(selectedAssignees);
             var allAssigneeIds = contatenate(keys, ",");
             $("#task_assignees").val(allAssigneeIds);
-            //$(this).append("<input type='hidden' name='task_assignee_list' value='" + allAssigneeIds + "'/>");
             $(this).ajaxSubmit({
                 dataType: 'json',
                 target: '#base_msg',   // target element(s) to be updated with server response

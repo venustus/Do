@@ -8,6 +8,7 @@
 
     <!-- jquery -->
     <script src="{% static "do/js/jquery-1.9.1.js" %}"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script src="{% static "do/js/jquery.validate.min.js" %}"></script>
 
     <!-- bootstrap javascript begin -->
@@ -54,11 +55,13 @@
                     <ul class="root">
                         <li>
                             <a href="#new_task_modal" id="new_task_modal_button" role="button" data-toggle="modal">
-                                <i class="icon-chevron-right pull-right"></i>+ Task
+                                <i class="icon-chevron-right pull-right"></i><i class="icon-pencil"></i> Task
                             </a>
                         </li>
-                        <li><a href="#new_task_bug"><i class="icon-chevron-right pull-right"></i>+ Bug</a></li>
-                        <li><a href="#new_task_enhancement"><i class="icon-chevron-right pull-right"></i>+
+                        <li><a href="#new_task_bug"><i class="icon-chevron-right pull-right"></i><i
+                                class="icon-bug"></i> Bug</a></li>
+                        <li><a href="#new_task_enhancement"><i class="icon-chevron-right pull-right"></i><i
+                                class="icon-magic"></i>
                             Enhancement</a></li>
                     </ul>
                 </div>
@@ -87,5 +90,6 @@
     </div>
     {% block footer %}{% endblock %}
 </div>
+{% block bodyendscript %}{% endblock %}
 </body>
 </html>

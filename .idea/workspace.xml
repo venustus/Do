@@ -1,27 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04554822-171f-423b-a59e-87fa0a37af13" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/less/common.css" />
+    <list default="true" id="04554822-171f-423b-a59e-87fa0a37af13" name="Default" comment="Common CSS converted to LESS format.">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/font/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/font/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/font/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/font/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/email/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_bootstrap.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_core.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_extras.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_icons.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_mixins.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_path.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/bootstrap.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/email/emailtask.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/extras.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/css/font-awesome-ie7.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/font-awesome-ie7.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/css/font-awesome-ie7.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/scss/font-awesome-ie7.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/font-awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/scss/font-awesome.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/font/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/path.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/models/project.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/variables.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/variables.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/templates/do/base.html" afterPath="$PROJECT_DIR$/do/templates/do/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/bootstrap.css" afterPath="$PROJECT_DIR$/do/static/do/bootstrap/less/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/bootstrap.less" afterPath="$PROJECT_DIR$/do/static/do/bootstrap/less/bootstrap.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/static/do/less/common.css" afterPath="$PROJECT_DIR$/do/static/do/less/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/static/do/less/common.less" afterPath="$PROJECT_DIR$/do/static/do/less/common.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/templates/do/form_util.html" afterPath="$PROJECT_DIR$/do/templates/do/form_util.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/templates/do/home.html" afterPath="$PROJECT_DIR$/do/templates/do/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/templates/do/newdoer.html" afterPath="$PROJECT_DIR$/do/templates/do/newdoer.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/templates/do/newtask.html" afterPath="$PROJECT_DIR$/do/templates/do/newtask.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/templates/do/newtask_head.html" afterPath="$PROJECT_DIR$/do/templates/do/newtask_head.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/models/product.py" afterPath="$PROJECT_DIR$/do/models/product.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/models/task.py" afterPath="$PROJECT_DIR$/do/models/task.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/static/do/css/token-input-bootstrap.css" afterPath="$PROJECT_DIR$/do/static/do/css/token-input-bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/urls.py" afterPath="$PROJECT_DIR$/do/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/models/user.py" afterPath="$PROJECT_DIR$/do/models/user.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/views.py" afterPath="$PROJECT_DIR$/do/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dolife.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/settings.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1372619140118" ignored="false" />
-    <file path="/views.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373209455942" ignored="false" />
-    <file path="/urls.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373209260390" ignored="false" />
+    <file path="/views.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374346222448" ignored="false" />
+    <file path="/urls.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374333356779" ignored="false" />
     <file path="/models.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370183883957" ignored="false" />
-    <file path="/home.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373209343634" ignored="false" />
+    <file path="/home.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374350660729" ignored="false" />
     <file path="/detail.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370084838123" ignored="false" />
     <file path="/create.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370087876066" ignored="false" />
-    <file path="/user.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370190282990" ignored="false" />
+    <file path="/user.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374333451353" ignored="false" />
     <file path="/__init__.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370172030318" ignored="false" />
-    <file path="/task.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373205813192" ignored="false" />
+    <file path="/task.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374343907870" ignored="false" />
     <file path="/bug.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370190262629" ignored="false" />
-    <file path="/product.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370184923422" ignored="false" />
-    <file path="/Dummy.txt" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373217298165" ignored="false" />
+    <file path="/product.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373711742873" ignored="false" />
+    <file path="/Dummy.txt" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374324056712" ignored="false" />
     <file path="/login.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370195325011" ignored="false" />
-    <file path="/newdoer.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373197594104" ignored="false" />
+    <file path="/newdoer.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374328997650" ignored="false" />
     <file path="/common.css" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373124657864" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/openapi.jar!/standardSchemas/html5/xhtml5.xsd" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976813672" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/lib/openapi.jar!/standardSchemas/XMLSchema.xsd" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976813672" ignored="false" />
@@ -38,14 +85,17 @@
     <file path="$USER_HOME$/Library/Caches/PyCharm20/python_stubs/596071422/errno.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976857578" ignored="false" />
     <file path="$USER_HOME$/Library/Caches/PyCharm20/python_stubs/596071422/_collections.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976857578" ignored="false" />
     <file path="$USER_HOME$/Library/Caches/PyCharm20/python_stubs/596071422/_weakref.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976857578" ignored="false" />
-    <file path="/base.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373210003116" ignored="false" />
-    <file path="/newtask.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373204313213" ignored="false" />
-    <file path="/newtask_head.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373204619976" ignored="false" />
+    <file path="/base.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374349726733" ignored="false" />
+    <file path="/newtask.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373714140553" ignored="false" />
+    <file path="/newtask_head.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373709739586" ignored="false" />
     <file path="/token-input-bootstrap.less" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1372787306212" ignored="false" />
     <file path="/a.dummy" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373194111408" ignored="false" />
-    <file path="/variables.less" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1372790301694" ignored="false" />
-    <file path="/common.less" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373195333626" ignored="false" />
-    <file path="/form_util.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373210633377" ignored="false" />
+    <file path="/variables.less" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373713383865" ignored="false" />
+    <file path="/common.less" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374350556855" ignored="false" />
+    <file path="/form_util.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373646722809" ignored="false" />
+    <file path="/bootstrap.less" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373712907478" ignored="false" />
+    <file path="/project.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374329942370" ignored="false" />
+    <file path="/emailtask.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374348341219" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +109,11 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="DatabaseView">
+    <flatten value="false" />
+    <groupTables value="false" />
+    <sortChildren value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="dolife" />
@@ -68,79 +123,7 @@
       <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/do/templates/do/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="13" selection-start="1477" selection-end="1477" vertical-scroll-proportion="2.28">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="css_includes.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/do/templates/do/css_includes.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="14" selection-start="191" selection-end="191" vertical-scroll-proportion="2.28">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/do/templates/do/home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="13" selection-start="302" selection-end="302" vertical-scroll-proportion="2.28">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newtask.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/do/templates/do/newtask.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="39" selection-start="1924" selection-end="1924" vertical-scroll-proportion="1.64">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/do/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="0" selection-start="2702" selection-end="2702" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="base.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file:///Library/Python/2.7/site-packages/django/core/handlers/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="0" selection-start="5458" selection-end="5458" vertical-scroll-proportion="4.3106794">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/do/models/user.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="28" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/do/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="52" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newdoer.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/do/templates/do/newdoer.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="41" selection-start="5757" selection-end="5757" vertical-scroll-proportion="2.28">
+            <state line="90" column="26" selection-start="3561" selection-end="3574" vertical-scroll-proportion="-48.64">
               <folding />
             </state>
           </provider>
@@ -149,7 +132,83 @@
       <file leaf-file-name="form_util.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/do/templates/do/form_util.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="18" selection-start="168" selection-end="168" vertical-scroll-proportion="2.28">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="20.4">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/do/static/do/less/common.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="288" column="21" selection-start="4427" selection-end="4427" vertical-scroll-proportion="-16.653847">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/do/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="25" selection-start="1237" selection-end="1237" vertical-scroll-proportion="-8.423077">
+              <folding>
+                <element signature="e#27#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newtask_head.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/do/templates/do/newtask_head.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="43.44">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="task.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/do/models/task.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64" column="0" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/do/models/user.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="12" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="emailtask.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/do/email/emailtask.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="25" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#47#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/do/templates/do/home.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="14" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.4090909">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="css_includes.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/do/templates/do/css_includes.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
@@ -179,22 +238,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/do/static/do/js/less-1.3.3.min.js" />
-        <option value="$PROJECT_DIR$/settings.py" />
-        <option value="$PROJECT_DIR$/do/static/do/css/token-input-bootstrap.less" />
-        <option value="$PROJECT_DIR$/do/static/do/bootstrap/less/variables.less" />
-        <option value="$PROJECT_DIR$/do/static/do/css/common.css" />
-        <option value="$PROJECT_DIR$/do/templates/do/css_includes.html" />
-        <option value="$PROJECT_DIR$/do/static/do/less/common.less" />
-        <option value="$PROJECT_DIR$/do/templates/do/newtask.html" />
         <option value="$PROJECT_DIR$/do/templates/do/newtask_head.html" />
-        <option value="$PROJECT_DIR$/do/models/task.py" />
-        <option value="$PROJECT_DIR$/do/urls.py" />
-        <option value="$PROJECT_DIR$/do/templates/do/home.html" />
-        <option value="$PROJECT_DIR$/do/templates/do/base.html" />
-        <option value="$PROJECT_DIR$/do/templates/do/form_util.html" />
+        <option value="$PROJECT_DIR$/do/models/product.py" />
+        <option value="$PROJECT_DIR$/do/static/do/bootstrap/less/bootstrap.less" />
+        <option value="$PROJECT_DIR$/do/static/do/font-awesome/less/variables.less" />
+        <option value="$PROJECT_DIR$/do/templates/do/newtask.html" />
         <option value="$PROJECT_DIR$/do/templates/do/newdoer.html" />
+        <option value="$PROJECT_DIR$/do/models/project.py" />
+        <option value="$PROJECT_DIR$/do/urls.py" />
+        <option value="$PROJECT_DIR$/do/models/user.py" />
+        <option value="$PROJECT_DIR$/do/email/__init__.py" />
         <option value="$PROJECT_DIR$/do/views.py" />
+        <option value="$PROJECT_DIR$/do/models/task.py" />
+        <option value="$PROJECT_DIR$/do/email/emailtask.py" />
+        <option value="$PROJECT_DIR$/do/templates/do/base.html" />
+        <option value="$PROJECT_DIR$/do/static/do/less/common.less" />
+        <option value="$PROJECT_DIR$/do/templates/do/home.html" />
       </list>
     </option>
   </component>
@@ -245,7 +304,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -314,20 +372,91 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="do" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common.less" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dolife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dolife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="do" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="do" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dolife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dolife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="do" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dolife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dolife" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="do" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="email" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/dependencies/django-social-auth" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/do/email/emailtask.py" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
@@ -585,7 +714,11 @@
       <created>1373217361724</created>
       <updated>1373217361724</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Common CSS converted to LESS format.">
+      <created>1373217422949</created>
+      <updated>1373217422949</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -612,21 +745,21 @@
     <frame x="0" y="22" width="1228" height="710" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19932432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.6710311" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24577703" sideWeight="0.8" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.50421584" sideWeight="0.8217905" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26311338" sideWeight="0.8006757" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5033784" sideWeight="0.8217905" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32711864" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32546374" sideWeight="0.17820945" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3260135" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3243243" sideWeight="0.17820945" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -674,7 +807,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="New task creation functionally complete." />
+    <option name="LAST_COMMIT_MESSAGE" value="Common CSS converted to LESS format." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -694,133 +827,128 @@
     <MESSAGE value="Adding bootstrap and datepicker" />
     <MESSAGE value="Cleaned up new task form" />
     <MESSAGE value="New task creation functionally complete." />
+    <MESSAGE value="Common CSS converted to LESS format." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/do/views.py</url>
-          <line>91</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/do/views.py</url>
-          <line>61</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="24" />
+      <option name="time" value="27" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/do/static/do/less/common.less">
+    <entry file="file:///Library/Python/2.7/site-packages/mongoengine/document.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="34" selection-start="565" selection-end="565" vertical-scroll-proportion="-6.4">
+        <state line="55" column="19" selection-start="2107" selection-end="2107" vertical-scroll-proportion="0.3320965">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
+    <entry file="file://$PROJECT_DIR$/do/models/product.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#23#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/models/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/mongoengine/base/fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="396" column="16" selection-start="15089" selection-end="15089" vertical-scroll-proportion="0.7393768">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Python/2.7/site-packages/pymongo-2.5.1-py2.7-macosx-10.8-intel.egg!/bson/objectid.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="8" selection-start="1810" selection-end="1810" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/models/task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="11" selection-start="776" selection-end="776" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/templates/do/newtask_head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="38" selection-start="410" selection-end="410" vertical-scroll-proportion="46.08">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/templates/do/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="13" selection-start="1477" selection-end="1477" vertical-scroll-proportion="2.28">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/templates/do/css_includes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="14" selection-start="191" selection-end="191" vertical-scroll-proportion="2.28">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/templates/do/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="302" selection-end="302" vertical-scroll-proportion="2.28">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/templates/do/form_util.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="168" selection-end="168" vertical-scroll-proportion="2.28">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="52" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/templates/do/newtask.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="39" selection-start="1924" selection-end="1924" vertical-scroll-proportion="1.64">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/do/templates/do/newdoer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="41" selection-start="5757" selection-end="5757" vertical-scroll-proportion="2.28">
+        <state line="17" column="60" selection-start="504" selection-end="504" vertical-scroll-proportion="-10.88">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/email/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/mongoengine/django/auth.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="201" column="6" selection-start="7772" selection-end="7772" vertical-scroll-proportion="-0.7894737">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/do/models/user.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="28" selection-start="453" selection-end="453" vertical-scroll-proportion="0.0">
+        <state line="12" column="12" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/models/task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="0" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/templates/do/css_includes.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/email/emailtask.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="25" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/templates/do/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="90" column="26" selection-start="3561" selection-end="3574" vertical-scroll-proportion="-48.64">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/templates/do/form_util.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="20.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/templates/do/newtask_head.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="43.44">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/do/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="0" selection-start="2702" selection-end="2702" vertical-scroll-proportion="0.0">
+        <state line="37" column="25" selection-start="1237" selection-end="1237" vertical-scroll-proportion="-8.423077">
+          <folding>
+            <element signature="e#27#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/static/do/less/common.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="288" column="21" selection-start="4427" selection-end="4427" vertical-scroll-proportion="-16.653847">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django/core/handlers/base.py">
+    <entry file="file://$PROJECT_DIR$/do/templates/do/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="0" selection-start="5458" selection-end="5458" vertical-scroll-proportion="4.3106794">
+        <state line="34" column="14" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.4090909">
           <folding />
         </state>
       </provider>

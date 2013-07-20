@@ -2,6 +2,9 @@
 
 @default_font: 'Source Sans Pro';
 @default_font_size: '14px';
+@default_border_radius: '6px';
+@dimmed_gray: #a1a1a1;
+@light_gray: #E6E6E6;
 
 body {
   background-image: url('../images/background.gif');
@@ -16,21 +19,46 @@ body {
   clear: left;
 }
 
-input.default_text, textarea.default_text {
-  float: left;
+.standard_input_text_box {
   width: 200px;
   height: 30px;
+}
+
+.rounded-corners(@radius: 6px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.form_input_text {
+  float: left;
   margin-bottom: 8px;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px;
+
   font-size: @default_font_size;
   font-family: @default_font, sans-serif;
 }
 
-input.default_text_active, textarea.default_text_active {
-  color: #a1a1a1;
-  display: none;
+textarea.default_text {
+  .form_input_text;
+  width: 500px;
+  height: 100px;
+}
+
+input.default_text {
+  .form_input_text;
+  .standard_input_text_box;
+}
+
+.dimmed {
+  color: @dimmed_gray;
+}
+
+*.unselectable {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 .form_error {
@@ -63,19 +91,6 @@ input.default_text_active, textarea.default_text_active {
 /* input forms end */
 
 /* basic html elements end */
-
-/* DO IT button */
-.doitbutton {
-  background-color: red;
-  color: white;
-  font-weight: bold;
-  font-family: @default_font, sans-serif;
-  border: none;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  font-size: @default_font_size;
-}
 
 /* user sign up/login page */
 #do_main_logo {
@@ -197,10 +212,79 @@ a.doitdropdown {
 }
 
 #new_task_modal .modal_body {
-  max-height: 800px;
+  max-height: 500px;
 }
 
 #new_task_modal {
   width: 900px;
   margin: 50px 0 0 -450px;
+}
+
+.task_list_pane {
+  background-color: white;
+  border: none;
+  padding: 10px;
+  width: 400px;
+  .rounded-corners;
+}
+
+ul.dotasklist {
+  list-style-type: none;
+  margin: 0px;
+}
+
+li.dotask {
+  background-color: @light_gray;
+  margin-bottom: 5px;
+  height: 60px;
+  font-family: @default_font;
+  font-size: @default_font_size;
+  .rounded-corners;
+  padding: 5px;
+  .task_element {
+    clear: left;
+  }
+  .dotaskright {
+    float: right;
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    a:visited {
+      text-decoration: none;
+      color: inherit;
+    }
+    a:hover {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  p {
+    margin: 0px;
+  }
+  a:link {
+    color: red;
+  }
+
+  a:hover {
+    color: darkred;
+  }
+
+  a:visited {
+    color: brown;
+  }
+}
+
+.icon-green {
+  color: green;
+  border-radius: 50%;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: green;
+}
+
+.today_pane {
+  height: 500px;
+  width: 400px;
+  float: left;
+  margin-right: 20px;
 }

@@ -48,6 +48,7 @@ class Task(Document):
     status = IntField()
     tags = ListField(StringField(max_length=30))
     updates = ListField(EmbeddedDocumentField(TaskUpdate))
+    parent_task = ReferenceField('self')
 
     meta = {'allow_inheritance': True}
 
@@ -60,3 +61,4 @@ class Task(Document):
 
     class Meta:
         app_label = 'do'
+

@@ -1,22 +1,59 @@
 <script type="text/javascript">
-    $(document).ready(function () {
-        // input text fields
-        $(".default_text_active").each(function () {
-            $(this).show();
-            var cur_field_id = $(this).attr("id");
-            var original_field_id = cur_field_id.substring(8);
-            $("#" + original_field_id).hide();
-            $(this).focus(function () {
-                $(this).hide();
-                $("#" + original_field_id).show();
-                $("#" + original_field_id).focus();
-            });
-            $("#" + original_field_id).blur(function () {
-                if ($("#" + original_field_id).val() == "") {
-                    $("#default_" + original_field_id).show();
-                    $("#" + original_field_id).hide();
-                }
-            });
-        });
-    });
+    // ==ClosureCompiler==
+    // @output_file_name default.js
+    // @compilation_level SIMPLE_OPTIMIZATIONS
+    // ==/ClosureCompiler==
+
+    $.fn.defaultText = function (options) {
+        var defaults = {
+            css: 'dimmed'
+        };
+
+        var options = $.extend({}, defaults, options);
+
+        if (!('text' in options)) return this;
+
+        var input = this[0],
+                $input = this,
+                offset = $input.offset();
+
+        function hide() {
+            $div.hide();
+            $input.add($div).removeClass(options.css);
+        };
+
+        function show() {
+            $div.show();
+            $input.add($div).addClass(options.css);
+        }
+
+        function focus() {
+            if (input.value.length) hide();
+            else show();
+        };
+
+        // Create div to put placeholder text in
+        var $div = $('<span>' + options.text + '</span>')
+            // Position it to the same place as the input box:
+                .css({ position: 'absolute',
+                    top: offset.top,
+                    left: offset.left + 4,
+                    cursor: 'text'
+                })
+                .click(function () {
+                    $input.focus();
+                    focus();
+                })
+                .addClass(options.css + ' unselectable')
+                .appendTo('#login_form');
+
+        // Also add the class to the input box:
+        $input
+                .addClass(options.css)
+                .keyup(focus).blur(function () {
+                    if (!input.value.length) show();
+                });
+
+        return this;
+    };
 </script>

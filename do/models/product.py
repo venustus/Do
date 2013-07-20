@@ -3,8 +3,10 @@ __author__ = 'venkat'
 from mongoengine import *
 from user import User
 
+
 class ProductStatus:
-    DEVELOPMENT, BETA, PRODUCTION = range(3)
+    CONCEPTION, PLANNING, DEVELOPMENT, BETA, PRODUCTION = range(3)
+
 
 class Component(Document):
     component_id = ObjectIdField()
@@ -14,6 +16,7 @@ class Component(Document):
 
     class Meta:
         app_label = 'do'
+
 
 class Product(Document):
     product_id = ObjectIdField()

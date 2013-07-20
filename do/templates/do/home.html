@@ -2,13 +2,54 @@
 
 {% block title %}All tasks{% endblock %}
 {% block main_contents %}
-    {% if all_tasks %}
-        <ul>
-            {% for task in all_tasks %}
-                <li><a href="{% url 'do:task_detail' task.id %}">{{ task.title }}</a></li>
-            {% endfor %}
+    <div id="today_tasks" class="today_pane task_list_pane">
+        <ul id="today_task_list" class="dotasklist">
+
         </ul>
+    </div>
+    {% if all_tasks %}
+        <div id="backlog" class="task_list_pane">
+            <ul class="dotasklist">
+                {% for task in all_tasks %}
+                    <li class="dotask">
+                        <div class="dotaskright">
+                            <a href="#">
+                                <i class="icon-ok-sign icon-large icon-green"></i>
+                            </a>
+                            <a href="#">
+                                <i class="icon-pencil icon-large"></i>
+                            </a>
+                        </div>
+                        <div class="dotaskleft">
+                            <a class="task_element" href="{% url 'do:task_detail' task.id %}">{{ task.title }}</a>
+
+                            <p class="task_element">Due by {{ task.complete_by }}</p>
+
+                            <p class="task_element">Assigned to
+                                {% for doer in task.assignees %}
+                                    <a href="{% url 'do:user_detail' doer.id %}">{{ doer.get_full_name }}</a>
+                                {% endfor %}
+                            </p>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
     {% else %}
         <p>No tasks are available.</p>
     {% endif %}
+{% endblock %}
+{% block bodyendscript %}
+    <script type="text/javascript">
+        $(".dotask").each(function () {
+            $(this).draggable();
+        });
+        $("#today_task_list").droppable({
+            drop: function (droppedOn, droppedElement) {
+                $(droppedOn).html($(droppedElement).html());
+                $(droppedElement).remove();
+                alert("dropped");
+            }
+        });
+    </script>
 {% endblock %}

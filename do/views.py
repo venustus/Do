@@ -1,6 +1,8 @@
 # Create your views here.
 
+import time
 import json
+from datetime import datetime
 
 from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.shortcuts import render
@@ -8,11 +10,15 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from do.models.task import Task
 from do.models.user import Doer
+from do.email.emailtask import EmailTaskListener
 
 
 @login_required
 def home(request):
     try:
+        email_task_listener = EmailTaskListener('stbeehive.oracle.com', '993',
+                                                'venkata.pedapati@oracle.com', 'ZZOiTfByGX0o')
+        email_task_listener.get_email_one_day(request.user)
         all_tasks = Task.objects.filter(assignees=request.user)
     except Task.DoesNotExist:
         return render(request, 'do/home.html', {'all_tasks': []})
@@ -95,13 +101,15 @@ def create_task(request):
         assignees = [Doer.objects.get(id=assignee_id) for assignee_id in assignees_arr]
         title = request.POST['task_summary']
         primary_desc = request.POST['task_detail']
+        task_due_date = request.POST['task_due_date']
     except KeyError:
         return HttpResponse(json.dumps(json_response))
     else:
         task = Task(title=title,
                     created_by=created_by,
                     assignees=assignees,
-                    primary_desc=primary_desc)
+                    primary_desc=primary_desc,
+                    complete_by=datetime.fromtimestamp(time.mktime(time.strptime(task_due_date, "%m/%d/%Y"))))
         task.save()
         json_response['status'] = 'success'
         json_response['message'] = 'Created new task'
@@ -122,3 +130,7 @@ def people_search(request):
         return HttpResponse(json_response)
     except KeyError:
         return HttpResponse("[]")
+
+
+def user_detail(request, user_id):
+    return HttpResponse("User " + user_id)

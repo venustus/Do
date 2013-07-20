@@ -11,23 +11,46 @@ body {
     clear: left;
 }
 
-input.default_text,
-textarea.default_text {
-    float: left;
+.standard_input_text_box {
     width: 200px;
     height: 30px;
+}
+
+.form_input_text {
+    float: left;
     margin-bottom: 8px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
     font-size: '14px';
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-input.default_text_active,
-textarea.default_text_active {
+textarea.default_text {
+    float: left;
+    margin-bottom: 8px;
+    font-size: '14px';
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 500px;
+    height: 100px;
+}
+
+input.default_text {
+    float: left;
+    margin-bottom: 8px;
+    font-size: '14px';
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 200px;
+    height: 30px;
+}
+
+.dimmed {
     color: #a1a1a1;
-    display: none;
+}
+
+*.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .form_error {
@@ -60,19 +83,6 @@ textarea.default_text_active {
 
 /* input forms end */
 /* basic html elements end */
-/* DO IT button */
-.doitbutton {
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    font-family: 'Source Sans Pro', sans-serif;
-    border: none;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-    font-size: '14px';
-}
-
 /* user sign up/login page */
 #do_main_logo {
     float: left;
@@ -194,10 +204,90 @@ a.doitdropdown {
 }
 
 #new_task_modal .modal_body {
-    max-height: 800px;
+    max-height: 500px;
 }
 
 #new_task_modal {
     width: 900px;
     margin: 50px 0 0 -450px;
+}
+
+.task_list_pane {
+    background-color: white;
+    border: none;
+    padding: 10px;
+    width: 400px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+
+ul.dotasklist {
+    list-style-type: none;
+    margin: 0px;
+}
+
+li.dotask {
+    background-color: #e6e6e6;
+    margin-bottom: 5px;
+    height: 60px;
+    font-family: 'Source Sans Pro';
+    font-size: '14px';
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+li.dotask .task_element {
+    clear: left;
+}
+
+li.dotask .dotaskright {
+    float: right;
+}
+
+li.dotask .dotaskright a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li.dotask .dotaskright a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+li.dotask .dotaskright a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+li.dotask p {
+    margin: 0px;
+}
+
+li.dotask a:link {
+    color: red;
+}
+
+li.dotask a:hover {
+    color: darkred;
+}
+
+li.dotask a:visited {
+    color: brown;
+}
+
+.icon-green {
+    color: green;
+    border-radius: 50%;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: green;
+}
+
+.today_pane {
+    height: 500px;
+    width: 400px;
+    float: left;
+    margin-right: 20px;
 }

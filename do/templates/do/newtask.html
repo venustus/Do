@@ -3,50 +3,42 @@
      aria-hidden="true">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="new-task-header">Create new task</h3>
+        <h3 id="new-task-header">create new task</h3>
     </div>
-    <div class="modal-body">
+    <div id="new_task_modal_mody" class="modal-body">
         <form id="new_task_form" method="post" action="{% url "do:create_task" %}">
             {% csrf_token %}
-            <label for="task_summary" class="form_label">Task Summary</label>
+            <label for="task_summary" class="form_label">task summary</label>
             <input type="text"
                    class="default_text"
                    name="task_summary"
                    id="task_summary"
+                   placeholder="summarize the task in few words"
                    required/>
-            <input type="text"
-                   class="default_text default_text_active ignore"
-                   id="default_task_summary"
-                   value="Tell what to do in few words"/>
             <br class="form_new_line"/>
-            <label for="task_detail" class="form_label">Details</label>
-            <textarea rows="5" cols="50"
+            <label for="task_detail" class="form_label">details</label>
+            <textarea rows="10" cols="300"
                       class="default_text"
                       name="task_detail"
-                      id="task_detail"></textarea>
-            <textarea rows="5" cols="50"
-                      class="default_text default_text_active ignore"
-                      id="default_task_detail">Describe the task in detail</textarea>
+                      id="task_detail"
+                      placeholder="describe the task in detail"></textarea>
             <br class="form_new_line"/>
-            <label for="task_due_date" class="form_label">Due date</label>
+            <label for="task_due_date" class="form_label">due date</label>
             <input type="text"
                    class="default_text"
                    name="task_due_date"
-                   id="task_due_date" required/>
-            <input type="text"
-                   class="default_text default_text_active ignore"
-                   value="Put a due date"
-                   id="default_task_due_date"/>
+                   placeholder="select due date"
+                   id="task_due_date"/>
             <br class="form_new_line"/>
-            <label for="task_detail" class="form_label">Add People or Teams. Start typing names</label>
+            <label for="task_detail" class="form_label">add people or teams. start typing in names.</label>
             <input type="text"
                    class="default_text"
                    name="task_assignees"
-                   placeholder="Add People or Teams"
+                   placeholder="add people or teams"
                    id="task_assignees" required/>
             <br class="form_new_line"/>
-            <button class="doitbutton" id="doit" type="submit">
-                Add Task
+            <button class="btn btn-danger" id="doit" type="submit">
+                push to backlog
             </button>
         </form>
     </div>
