@@ -1,0 +1,51 @@
+NameError: .icon-FontAwesome is undefined in
+
+/
+Users
+
+/
+venkat
+
+/
+Documents
+
+/
+Projects
+
+/
+do
+
+/
+dolife
+
+/
+do
+
+/
+static
+
+/
+do
+
+/
+font-awesome
+
+/
+less
+
+/
+core.less on line
+
+6
+,
+column
+
+3
+:
+
+5
+[class*=" icon-"] {
+    6 . icon-FontAwesome();
+    7
+}
+

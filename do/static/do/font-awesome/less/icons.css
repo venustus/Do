@@ -1,0 +1,7 @@
+NameError: variable
+
+@glass is undefined in /Users/venkat/Documents/Projects/do/dolife/do/static/do/font-awesome/less/icons.less on line 5, column 12:
+4 .icon-glass:before {
+5   content: @glass;
+6 }
+
