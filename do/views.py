@@ -3,26 +3,40 @@
 import time
 import json
 from datetime import datetime
+from itertools import chain
 
 from django.http import HttpResponse, HttpResponseRedirect, Http404
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from do.models.task import Task
+from do.email.emailtask import EmailTask
 from do.models.user import Doer
-from do.email.emailtask import EmailTaskListener
+from do.models.project import Project
 
 
 @login_required
 def home(request):
     try:
+        """
         email_task_listener = EmailTaskListener('stbeehive.oracle.com', '993',
                                                 'venkata.pedapati@oracle.com', 'ZZOiTfByGX0o')
         email_task_listener.get_email_one_day(request.user)
-        all_tasks = Task.objects.filter(assignees=request.user)
+        """
+        all_normal_tasks = Task.objects.filter(assignees__contains=request.user)
+        all_email_tasks = EmailTask.objects.filter(assignees__contains=request.user)
+        all_tasks = chain(all_normal_tasks, all_email_tasks)
+        try:
+            all_projects = Project.objects.filter(members__contains=request.user)
+        except Project.DoesNotExist:
+            all_projects = []
     except Task.DoesNotExist:
-        return render(request, 'do/home.html', {'all_tasks': []})
-    return render(request, 'do/home.html', {'all_tasks': all_tasks})
+        return render(request, 'do/home.html', {'all_tasks': [],
+                                                'all_projects': [],
+                                                'user': request.user})
+    return render(request, 'do/home.html', {'all_tasks': all_tasks,
+                                            'all_projects': all_projects,
+                                            'user': request.user})
 
 
 @login_required
@@ -112,9 +126,30 @@ def create_task(request):
                     complete_by=datetime.fromtimestamp(time.mktime(time.strptime(task_due_date, "%m/%d/%Y"))))
         task.save()
         json_response['status'] = 'success'
-        json_response['message'] = 'Created new task'
+        json_response['message'] = 'created new task'
         return HttpResponse(json.dumps(json_response))
 
+@login_required
+def create_project(request):
+    json_response = {'status': 'failure', 'message': 'new project cannot be created'}
+    try:
+        project_name = request.POST['project_name']
+        assignees_str = request.POST['project_assignees']
+        assignees_arr = assignees_str.split(',')
+        assignees = [Doer.objects.get(id=assignee_id) for assignee_id in assignees_arr]
+        start_date = request.POST['start_date']
+        etc = request.POST['etc']
+    except KeyError:
+        return HttpResponse(json.dumps(json_response))
+    else:
+        project = Project(name=project_name,
+                          members=assignees,
+                          start_date=datetime.fromtimestamp(time.mktime(time.strptime(start_date, "%m/%d/%Y"))),
+                          estimated_time_for_completion_weeks=int(etc))
+        project.save()
+        json_response['status'] = 'success'
+        json_response['message'] = 'added new project'
+        return HttpResponse(json.dumps(json_response))
 
 def people_search(request):
     query_string = request.GET['q']

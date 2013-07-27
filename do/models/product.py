@@ -5,7 +5,7 @@ from user import User
 
 
 class ProductStatus:
-    CONCEPTION, PLANNING, DEVELOPMENT, BETA, PRODUCTION = range(3)
+    CONCEPTION, PLANNING, DEVELOPMENT, BETA, PRODUCTION = range(5)
 
 
 class Component(Document):

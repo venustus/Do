@@ -2,10 +2,22 @@
 
 {% block title %}All tasks{% endblock %}
 {% block main_contents %}
-    <div id="today_tasks" class="today_pane task_list_pane">
-        <ul id="today_task_list" class="dotasklist">
-
+    <div id="project_nav">
+        <ul class="nav nav-tabs">
+            <li class="active">
+                <a href="#">All</a>
+            </li>
+            {% for project in all_projects %}
+                <li>
+                    <a href="#">{{ project.name }}</a>
+                </li>
+            {% endfor %}
+            <li>
+                <a href="#new_proj_modal" role="button" id="new_proj_modal_button" data-toggle="modal">+ Add Project</a>
+            </li>
         </ul>
+    </div>
+    <div id="today_tasks" class="today_pane task_list_pane">
     </div>
     {% if all_tasks %}
         <div id="backlog" class="task_list_pane">
@@ -21,13 +33,19 @@
                             </a>
                         </div>
                         <div class="dotaskleft">
-                            <a class="task_element" href="{% url 'do:task_detail' task.id %}">{{ task.title }}</a>
+                            <a class="task_element" href="{% url 'do:task_detail' task.id %}">{{ task.title | truncatechars:45 }}</a>
 
                             <p class="task_element">Due by {{ task.complete_by }}</p>
 
                             <p class="task_element">Assigned to
                                 {% for doer in task.assignees %}
-                                    <a href="{% url 'do:user_detail' doer.id %}">{{ doer.get_full_name }}</a>
+                                    <a href="{% url 'do:user_detail' doer.id %}">
+                                    {% ifnotequal doer.username user.username %}
+                                        {{ doer.get_full_name }}
+                                    {% else %}
+                                        You
+                                    {% endifnotequal %}
+                                    </a>
                                 {% endfor %}
                             </p>
                         </div>
@@ -38,18 +56,29 @@
     {% else %}
         <p>No tasks are available.</p>
     {% endif %}
+    {% include "do/newproject.html" %}
 {% endblock %}
 {% block bodyendscript %}
     <script type="text/javascript">
         $(".dotask").each(function () {
-            $(this).draggable();
+            $(this).draggable({revert: "invalid",
+                               containment: "document",
+                               cursor: "move",
+                               helper: "clone"});
         });
-        $("#today_task_list").droppable({
-            drop: function (droppedOn, droppedElement) {
-                $(droppedOn).html($(droppedElement).html());
-                $(droppedElement).remove();
-                alert("dropped");
+        $("#today_tasks").droppable({
+            accept: ".dotask",
+            drop: function (event, ui) {
+                doTaskToday(ui.draggable);
             }
         });
+
+        function doTaskToday($item) {
+            $item.fadeOut(function() {
+                var $list = $("ul", $("#today_tasks")).length ? $("ul", $("#today_tasks")):
+                        $("<ul class='dotasklist'/>").appendTo($("#today_tasks"));
+                $item.appendTo($list).fadeIn();
+            });
+        }
     </script>
 {% endblock %}

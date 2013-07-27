@@ -1,0 +1,45 @@
+<!-- Modal -->
+<div id="new_proj_modal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="new-proj-header">add project</h3>
+    </div>
+    <div id="new_proj_modal_mody" class="modal-body">
+        <form id="new_proj_form" method="post" action="{% url "do:create_project" %}">
+            {% csrf_token %}
+            <label for="project_name" class="form_label">project name</label>
+            <input type="text"
+                   class="default_text"
+                   name="project_name"
+                   id="project_name"
+                   placeholder="give it a name"
+                   required/>
+            <br class="form_new_line"/>
+            <label for="start_date" class="form_label">start date</label>
+            <input type="text"
+                   class="default_text"
+                   name="start_date"
+                   placeholder="choose a date"
+                   id="start_date"/>
+            <br class="form_new_line"/>
+            <label for="etc" class="form_label">Estimated time for completion</label>
+            <input type="text"
+                   class="default_text"
+                   name="etc"
+                   placeholder="time in weeks"
+                   id="etc"/>
+            <br class="form_new_line"/>
+            <label for="project_assignees" class="form_label">add people or teams. start typing in names.</label>
+            <input type="text"
+                   class="default_text"
+                   name="project_assignees"
+                   placeholder="add people or teams"
+                   id="project_assignees" required/>
+            <br class="form_new_line"/>
+            <button class="btn btn-danger" id="doit" type="submit">
+                add project
+            </button>
+        </form>
+    </div>
+</div>

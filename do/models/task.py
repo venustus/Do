@@ -43,7 +43,7 @@ class Task(Document):
     assignees = ListField(ReferenceField(Doer))
     created_at = DateTimeField(default=datetime.now())
     complete_by = DateTimeField()
-    primary_desc = StringField(max_length=20000, required=True)
+    primary_desc = StringField(required=True)
     attachments = ListField(EmbeddedDocumentField(Attachment))
     status = IntField()
     tags = ListField(StringField(max_length=30))

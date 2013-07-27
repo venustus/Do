@@ -10,6 +10,9 @@ class Project(Document):
     name = StringField(max_length=64)
     product = ReferenceField(Product)
     start_date = DateTimeField()
-    estimated_completion_date = DateTimeField()
+    estimated_time_for_completion_weeks = IntField()
     sprint_time_in_weeks = IntField()
-    team_name = ReferenceField(Doer)
+    members = ListField(ReferenceField(Doer))
+
+    class Meta:
+        app_label = 'do'

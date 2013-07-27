@@ -3,8 +3,6 @@
 <head>
     <title>{% block title %}{% endblock %}</title>
     {% load staticfiles %}
-    <!-- Google Web fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'/>
 
     <!-- jquery -->
     <script src="{% static "do/js/jquery-1.9.1.js" %}"></script>
@@ -12,7 +10,11 @@
     <script src="{% static "do/js/jquery.validate.min.js" %}"></script>
 
     <!-- bootstrap javascript begin -->
+    <!--
+    <script src="{% static "do/bootstrap3/js/bootstrap.min.js" %}"></script>
+    -->
     <script src="{% static "do/bootstrap/js/bootstrap.min.js" %}"></script>
+
     <!-- bootstrap datepicker -->
     <script src="{% static "do/datepicker/js/bootstrap-datepicker.js" %}"></script>
 
@@ -40,6 +42,7 @@
         });
     </script>
     {% include "do/newtask_head.html" %}
+    {% include "do/newproject_head.html" %}
     {% include "do/form_util.html" %}
 </head>
 <body>
