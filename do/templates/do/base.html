@@ -58,14 +58,13 @@
                     <ul class="root">
                         <li>
                             <a href="#new_task_modal" id="new_task_modal_button" role="button" data-toggle="modal">
-                                <i class="icon-chevron-right pull-right"></i><i class="icon-pencil"></i> Task
+                                <i class="icon-chevron-right pull-right"></i>
+                                <i class="icon-pencil"></i>
+                                Task
                             </a>
                         </li>
                         <li><a href="#new_task_bug"><i class="icon-chevron-right pull-right"></i><i
-                                class="icon-bug"></i> Bug</a></li>
-                        <li><a href="#new_task_enhancement"><i class="icon-chevron-right pull-right"></i><i
-                                class="icon-magic"></i>
-                            Enhancement</a></li>
+                                class="icon-bug"></i> Issue</a></li>
                     </ul>
                 </div>
             </div>
@@ -83,8 +82,8 @@
             </div>
         </div>
     </div>
-    <div class="alert alert-danger row" id="base_info" style="display: none;">
-        <button type="button" class="close" data-dismiss="alert">&times;</button>
+    <div class="alert alert-success row" id="base_info" style="display: none;">
+        <button type="button" class="close">&times;</button>
         <div id="base_msg"></div>
     </div>
     {% include "do/newtask.html" %}
@@ -94,5 +93,10 @@
     {% block footer %}{% endblock %}
 </div>
 {% block bodyendscript %}{% endblock %}
+<script type="text/javascript">
+    $('.alert .close').click(function (e) {
+        $(this).parent().hide();
+    });
+</script>
 </body>
 </html>

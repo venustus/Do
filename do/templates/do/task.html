@@ -1,0 +1,42 @@
+<li class="dotask">
+    <form style="display: none;" class="task_edit_form" method="post" action="{% url 'do:task_quick_edit' task.id %}">
+        {% csrf_token %}
+        <input type="text" id="status" name="status" value=""/>
+        <input type="text" id="important" name="important" value="no"/>
+        <input type="text" id="urgent" name="urgent" value="no"/>
+        <input type="text" id="today" name="today" value="no"/>
+    </form>
+    <div class="dotaskright">
+        <a href="#">
+            <i class="icon icon-star-empty icon-large icon-important"></i>
+        </a>
+        <a href="#">
+            <i class="icon icon-ok-sign icon-large icon-done"></i>
+        </a>
+        <a href="#">
+            <i class="icon icon-pencil icon-large icon-edit"></i>
+        </a>
+        <br/>
+        {% if task.is_overdue %}
+            <i class="icon icon-exclamation-sign icon-large icon-overdue"></i>
+        {% endif %}
+    </div>
+    <div class="dotaskleft">
+        <a class="task_element" href="{% url 'do:task_detail' task.id %}">{{ task.title | truncatechars:45 }}</a>
+        {% if task.complete_by %}
+            <p class="task_element">Due by {{ task.complete_by }}</p>
+        {% endif %}
+
+        <p class="task_element">Assigned to
+            {% for doer in task.assignees %}
+                <a href="{% url 'do:user_detail' doer.id %}">
+                    {% ifnotequal doer.username user.username %}
+                        {{ doer.get_full_name }}
+                    {% else %}
+                        You
+                    {% endifnotequal %}
+                </a>
+            {% endfor %}
+        </p>
+    </div>
+</li>

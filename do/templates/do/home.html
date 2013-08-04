@@ -18,67 +18,106 @@
         </ul>
     </div>
     <div id="today_tasks" class="today_pane task_list_pane">
+        <h2>Today</h2>
+        <ul class="dotasklist connectedSortable">
+            {% for task in all_normal_tasks %}
+                {% if task.is_due_today %}
+                    {% include "do/task.html" %}
+                {% endif %}
+            {% endfor %}
+            {% for task in all_email_tasks %}
+                {% if task.is_due_today %}
+                    {% include "do/task.html" %}
+                {% endif %}
+            {% endfor %}
+            <a href="#new_task_modal" id="new_task_modal_button3" role="button" data-toggle="modal">
+                <li class="dotask taskplaceholder">
+                    <i class="icon-pencil icon-large"></i> add task
+                </li>
+            </a>
+        </ul>
     </div>
-    {% if all_tasks %}
-        <div id="backlog" class="task_list_pane">
-            <ul class="dotasklist">
-                {% for task in all_tasks %}
-                    <li class="dotask">
-                        <div class="dotaskright">
-                            <a href="#">
-                                <i class="icon-ok-sign icon-large icon-green"></i>
-                            </a>
-                            <a href="#">
-                                <i class="icon-pencil icon-large"></i>
-                            </a>
-                        </div>
-                        <div class="dotaskleft">
-                            <a class="task_element" href="{% url 'do:task_detail' task.id %}">{{ task.title | truncatechars:45 }}</a>
-
-                            <p class="task_element">Due by {{ task.complete_by }}</p>
-
-                            <p class="task_element">Assigned to
-                                {% for doer in task.assignees %}
-                                    <a href="{% url 'do:user_detail' doer.id %}">
-                                    {% ifnotequal doer.username user.username %}
-                                        {{ doer.get_full_name }}
-                                    {% else %}
-                                        You
-                                    {% endifnotequal %}
-                                    </a>
-                                {% endfor %}
-                            </p>
-                        </div>
-                    </li>
-                {% endfor %}
-            </ul>
-        </div>
-    {% else %}
-        <p>No tasks are available.</p>
-    {% endif %}
+    <div id="backlog" class="task_list_pane">
+        <h2>Backlog</h2>
+        <ul class="dotasklist connectedSortable">
+            {% for task in all_normal_tasks %}
+                {% if not task.is_due_today %}
+                    {% include "do/task.html" %}
+                {% endif %}
+            {% endfor %}
+            {% for task in all_email_tasks %}
+                {% if not task.is_due_today %}
+                    {% include "do/task.html" %}
+                {% endif %}
+            {% endfor %}
+            <a href="#new_task_modal" id="new_task_modal_button2" role="button" data-toggle="modal">
+                <li class="dotask taskplaceholder"><i class="icon-pencil icon-large"></i> add task</li>
+            </a>
+        </ul>
+    </div>
     {% include "do/newproject.html" %}
 {% endblock %}
 {% block bodyendscript %}
     <script type="text/javascript">
-        $(".dotask").each(function () {
-            $(this).draggable({revert: "invalid",
-                               containment: "document",
-                               cursor: "move",
-                               helper: "clone"});
-        });
-        $("#today_tasks").droppable({
-            accept: ".dotask",
-            drop: function (event, ui) {
-                doTaskToday(ui.draggable);
+        function taskQuickEdited(data) {
+            if (data.status == "success") {
+                $("#base_info").show();
+                $("#base_msg").html(data.message);
             }
-        });
-
-        function doTaskToday($item) {
-            $item.fadeOut(function() {
-                var $list = $("ul", $("#today_tasks")).length ? $("ul", $("#today_tasks")):
-                        $("<ul class='dotasklist'/>").appendTo($("#today_tasks"));
-                $item.appendTo($list).fadeIn();
-            });
         }
+        $(".dotasklist").each(function () {
+            $(this).sortable({
+                items: "li:not(.taskplaceholder)",
+                connectWith: ".connectedSortable",
+                receive: function (event, ui) {
+                    if ($(this).parent().attr("id") == "today_tasks") {
+                        ui.item.find("#today").val("yes");
+                        ui.item.children("form").ajaxSubmit({
+                            dataType: 'json',
+                            taget: '#base_msg',
+                            success: taskQuickEdited
+                        });
+                    }
+                }
+            }).disableSelection();
+        });
+        $(".icon-ok-sign").each(function () {
+            $(this).click(function () {
+                $(this).parent().parent().parent().find("#status").val("done");
+                $(this).parent().parent().parent().children("form").ajaxSubmit({
+                    dataType: 'json',
+                    target: '#base_msg',
+                    success: taskQuickEdited
+                });
+                $(this).parent().parent().parent().fadeOut();
+            });
+        });
+        /*
+         $(".dotask").each(function () {
+         $(this).draggable({revert: "invalid",
+         containment: "document",
+         cursor: "move",
+         helper: "clone",
+         start: function(e, ui) {
+         $(ui.helper).addClass("task-draggable-helper");
+         }});
+         });
+         function initDroppable(item) {
+         item.droppable({
+         accept: ".dotask",
+         hoverClass: "dotask-drop-hover",
+         drop: function(event, ui) {
+         ui.draggable.next().remove();
+         ui.draggable.insertAfter(this);
+         var item = $("<li class='dotaskdroppable'></li>");
+         initDroppable(item);
+         item.insertAfter(ui.draggable);
+         }
+         });
+         }
+         $(".dotaskdroppable").each(function() {
+         initDroppable($(this));
+         });
+         */
     </script>
 {% endblock %}

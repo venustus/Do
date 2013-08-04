@@ -1,6 +1,6 @@
 __author__ = 'venkat'
 
-from datetime import datetime
+from datetime import datetime, timedelta
 from mongoengine import *
 from user import Doer
 
@@ -49,6 +49,8 @@ class Task(Document):
     tags = ListField(StringField(max_length=30))
     updates = ListField(EmbeddedDocumentField(TaskUpdate))
     parent_task = ReferenceField('self')
+    is_important = BooleanField()
+    is_urgent = BooleanField()
 
     meta = {'allow_inheritance': True}
 
@@ -58,6 +60,21 @@ class Task(Document):
 
     def aborted(self):
         self.status = TaskStatus.ABORTED
+
+    def is_completed(self):
+        return self.status == TaskStatus.COMPLETED or self.status == TaskStatus.ABORTED
+
+    def is_in_progress(self):
+        return self.status == TaskStatus.IN_PROGRESS or self.status == TaskStatus.OVERDUE
+
+    def is_overdue(self):
+        time_dif = datetime.now() > self.complete_by
+        return time_dif
+
+    def is_due_today(self):
+        time_left = ((datetime.now() +
+                      timedelta(days=1)).replace(hour=0, minute=0, second=0) - self.complete_by)
+        return 1 <= time_left.seconds < 86400
 
     class Meta:
         app_label = 'do'

@@ -4,7 +4,10 @@
 @default_font_size: '14px';
 @default_border_radius: '6px';
 @dimmed_gray: #a1a1a1;
+@placeholder_gray: #8a8a8a;
 @light_gray: #E6E6E6;
+@live_green: #33FF66;
+@star_yellow: #FFCC00;
 
 body {
   background-image: url('../images/background.gif');
@@ -145,7 +148,7 @@ a:visited {
 }
 
 .dropdown {
-  color: #555;
+  color: @placeholder_gray;
   margin: 3px 0 0 0;
   position: relative;
   height: 60px;
@@ -180,15 +183,15 @@ a:visited {
 }
 
 .dropdown li a:hover {
-  background: darkgray;
-  color: #FFFFFF;
+  background: @placeholder_gray;
+  color: white;
   text-decoration: none;
 }
 
 a.doitdropdown {
   font-size: 11px;
   line-height: 16px;
-  color: #555;
+  color: @placeholder_gray;
   position: absolute;
   z-index: 110;
   display: block;
@@ -223,24 +226,30 @@ a.doitdropdown {
 .task_list_pane {
   background-color: white;
   border: none;
-  padding: 10px;
+  padding: 0px 10px 10px 10px;
   width: 400px;
   .rounded-corners;
+  h2 {
+    margin-top: 0px;
+  }
 }
 
 ul.dotasklist {
   list-style-type: none;
   margin: 0px;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 400px;
 }
 
 li.dotask {
   background-color: @light_gray;
-  margin-bottom: 5px;
   height: 60px;
   font-family: @default_font;
   font-size: @default_font_size;
-  .rounded-corners;
   padding: 5px;
+  margin-bottom: 5px;
+  .rounded-corners;
   .task_element {
     clear: left;
   }
@@ -268,6 +277,15 @@ li.dotask {
 
   a:hover {
     color: darkred;
+    .icon-done {
+      color: @live_green;
+    }
+    .icon-edit {
+      color: orange;
+    }
+    .icon-important {
+      color: @star_yellow;
+    }
   }
 
   a:visited {
@@ -275,16 +293,29 @@ li.dotask {
   }
 }
 
-.icon-green {
-  color: green;
+li.taskplaceholder {
+  background-color: white;
+  color: @placeholder_gray;
+  border: 1px dotted @placeholder_gray;
+  font-size: 1.5em;
+  vertical-align: middle;
+  display: table-cell;
+  width: 400px;
+  text-align: center;
+}
+
+.icon-done {
   border-radius: 50%;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: green;
+}
+
+.icon-overdue {
+  color: red;
 }
 
 .today_pane {
   height: 500px;
   width: 400px;
   float: right;
-  margin-right: 20px;
 }

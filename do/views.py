@@ -5,11 +5,12 @@ import json
 from datetime import datetime
 from itertools import chain
 
-from django.http import HttpResponse, HttpResponseRedirect, Http404
+from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
-from do.models.task import Task
+from mongoengine.queryset.queryset import Q
+from do.models.task import Task, TaskStatus
 from do.email.emailtask import EmailTask
 from do.models.user import Doer
 from do.models.project import Project
@@ -23,18 +24,20 @@ def home(request):
                                                 'venkata.pedapati@oracle.com', 'ZZOiTfByGX0o')
         email_task_listener.get_email_one_day(request.user)
         """
-        all_normal_tasks = Task.objects.filter(assignees__contains=request.user)
+        all_normal_tasks = Task.objects(
+            Q(assignees=request.user) & (Q(status=TaskStatus.IN_PROGRESS) | Q(status=TaskStatus.OVERDUE)))
         all_email_tasks = EmailTask.objects.filter(assignees__contains=request.user)
-        all_tasks = chain(all_normal_tasks, all_email_tasks)
         try:
             all_projects = Project.objects.filter(members__contains=request.user)
         except Project.DoesNotExist:
             all_projects = []
     except Task.DoesNotExist:
-        return render(request, 'do/home.html', {'all_tasks': [],
+        return render(request, 'do/home.html', {'all_normal_tasks': [],
+                                                'all_email_tasks': [],
                                                 'all_projects': [],
                                                 'user': request.user})
-    return render(request, 'do/home.html', {'all_tasks': all_tasks,
+    return render(request, 'do/home.html', {'all_normal_tasks': all_normal_tasks,
+                                            'all_email_tasks': all_email_tasks,
                                             'all_projects': all_projects,
                                             'user': request.user})
 
@@ -123,11 +126,13 @@ def create_task(request):
                     created_by=created_by,
                     assignees=assignees,
                     primary_desc=primary_desc,
+                    status=TaskStatus.IN_PROGRESS,
                     complete_by=datetime.fromtimestamp(time.mktime(time.strptime(task_due_date, "%m/%d/%Y"))))
         task.save()
         json_response['status'] = 'success'
         json_response['message'] = 'created new task'
         return HttpResponse(json.dumps(json_response))
+
 
 @login_required
 def create_project(request):
@@ -151,6 +156,7 @@ def create_project(request):
         json_response['message'] = 'added new project'
         return HttpResponse(json.dumps(json_response))
 
+
 def people_search(request):
     query_string = request.GET['q']
     try:
@@ -164,6 +170,31 @@ def people_search(request):
         json_response += ']'
         return HttpResponse(json_response)
     except KeyError:
+        return HttpResponse("[]")
+
+
+@login_required
+def task_quick_edit(request, task_id):
+    json_response = {'status': 'failure', 'message': 'cannot save task'}
+    try:
+        task = Task.objects.get(id=task_id)
+        is_completed = request.POST['status']
+        is_due_today = request.POST['today']
+        is_important = request.POST['important']
+        is_urgent = request.POST['urgent']
+        if is_completed == 'done':
+            task.completed()
+        if is_important == 'yes':
+            task.is_important = True
+        if is_urgent == 'yes':
+            task.is_urgent = True
+        if is_due_today == 'yes':
+            task.complete_by = datetime.now().replace(hour=23, minute=59, second=59)
+        task.save()
+        json_response['status'] = 'success'
+        json_response['message'] = 'task marked completed'
+        return HttpResponse(json.dumps(json_response))
+    except Task.DoesNotExist:
         return HttpResponse("[]")
 
 
