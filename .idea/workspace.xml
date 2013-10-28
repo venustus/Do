@@ -2,238 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04554822-171f-423b-a59e-87fa0a37af13" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/images/glyphicons-halflings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/.bowerrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/.buildignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/.editorconfig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/.gitattributes" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/.htaccess" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/test/.jshintrc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/.travis.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/404.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/Gruntfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/scripts/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/karma-e2e.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/karma.conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/views/main.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/scripts/controllers/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/test/spec/controllers/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/styles/main.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/robots.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/test/runner.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/img/glyphicons-halflings.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/accordion.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/alerts.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/bootstrap.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/breadcrumbs.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/button-groups.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/buttons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/carousel.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/close.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/code.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/component-animations.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/dropdowns.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/forms.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/grid.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/hero-unit.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/labels-badges.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/layouts.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/media.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/modals.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/navbar.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/navs.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/pager.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/pagination.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/popovers.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/progress-bars.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/reset.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/responsive-1200px-min.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/responsive-767px-max.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/responsive-768px-979px.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/responsive-navbar.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/responsive-utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/responsive.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/responsive.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/scaffolding.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/sprites.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tests/buttons.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tests/css-tests.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tests/css-tests.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tests/forms-responsive.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tests/forms.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tests/navbar-fixed-top.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tests/navbar-static-top.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tests/navbar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/thumbnails.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tooltip.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/type.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/utilities.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/variables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/wells.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/css/token-input-bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/css/token-input-bootstrap.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/css/token-input-facebook.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/css/token-input-mac.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/css/token-input.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/datepicker/css/datepicker.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/datepicker/js/bootstrap-datepicker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/datepicker/less/datepicker.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/css/font-awesome-ie7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/css/font-awesome-ie7.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/font/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/font/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/font/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/font/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/font/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/bootstrap.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/core.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/core.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/extras.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/extras.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/font-awesome-ie7.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/font-awesome-ie7.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/font-awesome.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/icons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/icons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/path.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/path.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/variables.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_bootstrap.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_core.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_extras.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_path.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/scss/font-awesome-ie7.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/scss/font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/js/jquery-1.9.1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/js/jquery.tokeninput.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/js/jquery.validate.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/admin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/amazon.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/browserid.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/angel.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/behance.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/belgiumeid" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/bitbucket.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/dailymotion.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/disqus.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/douban.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/dropbox.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/evernote.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/exacttarget.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/fedora.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/fitbit.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/flickr.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/foursquare.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/gae.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/github.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/instagram.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/jawbone.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/linkedin.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/live.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/livejournal.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/mailru.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/mendeley.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/mixcloud.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/odnoklassniki.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/orkut.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/rdio.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/readability.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/shopify.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/skyrock.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/soundcloud.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/stackoverflow.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/stocktwits.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/trello.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/tripit.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/tumblr.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/twilio.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/vk.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/vkontakte.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/weibo.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/xing.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/yahoo.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/yammer.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/yammer_staging.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/yandex.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/facebook.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/google.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/pipeline/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/pipeline/associate.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/pipeline/misc.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/pipeline/social.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/pipeline/user.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/reddit.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/steam.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/stripe.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/twitter.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/yahoo.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/context_processors.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/db/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/db/base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/db/django_models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/db/mongoengine_models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/decorators.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/exceptions.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/fields.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/locale/ru/LC_MESSAGES/django.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/locale/ru/LC_MESSAGES/django.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/locale/tr/LC_MESSAGES/django.mo" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/locale/tr/LC_MESSAGES/django.po" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/management/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/management/commands/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/management/commands/clean_associations.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/management/commands/clean_nonces.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/middleware.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/migrations/0001_initial.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/migrations/0002_auto__add_unique_nonce_timestamp_salt_server_url__add_unique_associati.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/migrations/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/models.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/signals.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/store.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/tests/__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/tests/base.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/tests/client.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/tests/facebook.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/tests/google.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/tests/odnoklassniki.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/tests/twitter.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/urls.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/utils.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/views.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/img/glyphicons-halflings-white.png" afterPath="$PROJECT_DIR$/do/static/do/app/images/glyphicons-halflings-white.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/templates/do/base.html" afterPath="$PROJECT_DIR$/do/templates/do/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dolife.iml" afterPath="$PROJECT_DIR$/.idea/dolife.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/templates/do/newdoer.html" afterPath="$PROJECT_DIR$/do/templates/do/newdoer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urls.py" afterPath="$PROJECT_DIR$/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/urls.py" afterPath="$PROJECT_DIR$/do/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/views.py" afterPath="$PROJECT_DIR$/do/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dolife.iws" />
@@ -900,7 +668,11 @@
       <created>1375638534611</created>
       <updated>1375638534611</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Rewriting application using angularjs and djangorestframework.&#10;&#10;First commit in the new model - setup angularjs basic app and then linked the django url to load the first page.">
+      <created>1382933884059</created>
+      <updated>1382933884059</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -929,20 +701,20 @@
     <layout>
       <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5203252" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3260135" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32682925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32682925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34067798" sideWeight="0.8217905" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3219512" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3243243" sideWeight="0.17820945" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3260135" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.6710311" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28175896" sideWeight="0.4796748" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34067798" sideWeight="0.8217905" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3219512" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3219512" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3243243" sideWeight="0.17820945" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -965,8 +737,8 @@
     <MESSAGE value="Integrated with font-awesome and email.&#10;&#10;First trial of drag and drop interface using jquery." />
     <MESSAGE value="Improved drag and drop of tasks.&#10;&#10;'Add Project' Dialog." />
     <MESSAGE value="Drag and drop working good now. Task done workflow is done. Added few other icons." />
-    <option name="LAST_COMMIT_MESSAGE" value="Drag and drop working good now. Task done workflow is done. Added few other icons." />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="Rewriting application using angularjs and djangorestframework.&#10;&#10;First commit in the new model - setup angularjs basic app and then linked the django url to load the first page." />
+    <option name="LAST_COMMIT_MESSAGE" value="Rewriting application using angularjs and djangorestframework.&#10;&#10;First commit in the new model - setup angularjs basic app and then linked the django url to load the first page." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
