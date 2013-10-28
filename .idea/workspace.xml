@@ -1,101 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="04554822-171f-423b-a59e-87fa0a37af13" name="Default" comment="Common CSS converted to LESS format.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/font/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/font/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/font/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/font/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/email/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_bootstrap.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_extras.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/bootstrap.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/email/emailtask.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/extras.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/css/font-awesome-ie7.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/font-awesome-ie7.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/css/font-awesome-ie7.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/scss/font-awesome-ie7.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/font-awesome.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/scss/font-awesome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/font/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/path.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/models/project.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/variables.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/font-awesome/less/variables.less" />
+    <list default="true" id="04554822-171f-423b-a59e-87fa0a37af13" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/images/glyphicons-halflings.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/.bowerrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/.buildignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/.editorconfig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/.gitattributes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/.htaccess" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/test/.jshintrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/.travis.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/404.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/scripts/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/karma-e2e.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/karma.conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/views/main.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/scripts/controllers/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/test/spec/controllers/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/styles/main.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/app/robots.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/do/static/do/test/runner.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/img/glyphicons-halflings.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/js/bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/accordion.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/alerts.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/breadcrumbs.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/button-groups.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/buttons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/carousel.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/close.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/code.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/component-animations.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/dropdowns.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/forms.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/grid.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/hero-unit.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/labels-badges.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/layouts.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/media.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/modals.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/navbar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/navs.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/pager.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/pagination.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/popovers.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/progress-bars.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/reset.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/responsive-1200px-min.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/responsive-767px-max.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/responsive-768px-979px.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/responsive-navbar.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/responsive-utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/responsive.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/responsive.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/scaffolding.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/sprites.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tests/buttons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tests/css-tests.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tests/css-tests.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tests/forms-responsive.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tests/forms.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tests/navbar-fixed-top.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tests/navbar-static-top.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tests/navbar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/thumbnails.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/tooltip.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/type.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/utilities.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/variables.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/wells.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/css/token-input-bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/css/token-input-bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/css/token-input-facebook.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/css/token-input-mac.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/css/token-input.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/datepicker/css/datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/datepicker/js/bootstrap-datepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/datepicker/less/datepicker.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/css/font-awesome-ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/css/font-awesome-ie7.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/css/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/css/font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/font/FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/font/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/font/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/font/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/font/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/bootstrap.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/core.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/core.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/extras.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/extras.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/font-awesome-ie7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/font-awesome-ie7.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/icons.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/icons.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/path.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/path.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/variables.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/less/variables.less" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_bootstrap.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_extras.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/scss/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/scss/font-awesome-ie7.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/font-awesome/scss/font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/js/jquery-1.9.1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/js/jquery.tokeninput.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/do/static/do/js/jquery.validate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/admin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/amazon.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/browserid.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/angel.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/behance.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/belgiumeid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/bitbucket.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/dailymotion.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/disqus.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/douban.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/dropbox.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/evernote.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/exacttarget.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/fedora.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/fitbit.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/flickr.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/foursquare.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/gae.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/github.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/instagram.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/jawbone.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/linkedin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/live.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/livejournal.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/mailru.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/mendeley.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/mixcloud.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/odnoklassniki.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/orkut.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/rdio.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/readability.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/shopify.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/skyrock.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/soundcloud.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/stackoverflow.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/stocktwits.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/trello.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/tripit.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/tumblr.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/twilio.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/vk.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/vkontakte.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/weibo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/xing.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/yahoo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/yammer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/yammer_staging.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/contrib/yandex.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/facebook.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/google.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/pipeline/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/pipeline/associate.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/pipeline/misc.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/pipeline/social.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/pipeline/user.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/reddit.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/steam.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/stripe.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/twitter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/backends/yahoo.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/context_processors.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/db/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/db/base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/db/django_models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/db/mongoengine_models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/decorators.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/exceptions.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/fields.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/locale/ru/LC_MESSAGES/django.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/locale/ru/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/locale/tr/LC_MESSAGES/django.mo" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/locale/tr/LC_MESSAGES/django.po" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/management/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/management/commands/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/management/commands/clean_associations.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/management/commands/clean_nonces.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/middleware.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/migrations/0001_initial.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/migrations/0002_auto__add_unique_nonce_timestamp_salt_server_url__add_unique_associati.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/migrations/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/models.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/signals.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/store.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/tests/__init__.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/tests/base.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/tests/client.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/tests/facebook.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/tests/google.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/tests/odnoklassniki.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/tests/twitter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/urls.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/utils.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/social_auth/views.py" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/img/glyphicons-halflings-white.png" afterPath="$PROJECT_DIR$/do/static/do/app/images/glyphicons-halflings-white.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/templates/do/base.html" afterPath="$PROJECT_DIR$/do/templates/do/base.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/bootstrap.css" afterPath="$PROJECT_DIR$/do/static/do/bootstrap/less/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/static/do/bootstrap/less/bootstrap.less" afterPath="$PROJECT_DIR$/do/static/do/bootstrap/less/bootstrap.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/static/do/less/common.css" afterPath="$PROJECT_DIR$/do/static/do/less/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/static/do/less/common.less" afterPath="$PROJECT_DIR$/do/static/do/less/common.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/templates/do/form_util.html" afterPath="$PROJECT_DIR$/do/templates/do/form_util.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/templates/do/home.html" afterPath="$PROJECT_DIR$/do/templates/do/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dolife.iml" afterPath="$PROJECT_DIR$/.idea/dolife.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/templates/do/newdoer.html" afterPath="$PROJECT_DIR$/do/templates/do/newdoer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/templates/do/newtask.html" afterPath="$PROJECT_DIR$/do/templates/do/newtask.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/templates/do/newtask_head.html" afterPath="$PROJECT_DIR$/do/templates/do/newtask_head.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/models/product.py" afterPath="$PROJECT_DIR$/do/models/product.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/models/task.py" afterPath="$PROJECT_DIR$/do/models/task.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/static/do/css/token-input-bootstrap.css" afterPath="$PROJECT_DIR$/do/static/do/css/token-input-bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/urls.py" afterPath="$PROJECT_DIR$/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/urls.py" afterPath="$PROJECT_DIR$/do/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/models/user.py" afterPath="$PROJECT_DIR$/do/models/user.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/do/views.py" afterPath="$PROJECT_DIR$/do/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dolife.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/settings.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1372619140118" ignored="false" />
-    <file path="/views.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374346222448" ignored="false" />
-    <file path="/urls.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374333356779" ignored="false" />
-    <file path="/models.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370183883957" ignored="false" />
-    <file path="/home.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374350660729" ignored="false" />
-    <file path="/detail.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370084838123" ignored="false" />
-    <file path="/create.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370087876066" ignored="false" />
-    <file path="/user.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374333451353" ignored="false" />
-    <file path="/__init__.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370172030318" ignored="false" />
-    <file path="/task.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374343907870" ignored="false" />
-    <file path="/bug.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370190262629" ignored="false" />
-    <file path="/product.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373711742873" ignored="false" />
-    <file path="/Dummy.txt" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374324056712" ignored="false" />
-    <file path="/login.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1370195325011" ignored="false" />
-    <file path="/newdoer.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374328997650" ignored="false" />
-    <file path="/common.css" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373124657864" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/openapi.jar!/standardSchemas/html5/xhtml5.xsd" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976813672" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/openapi.jar!/standardSchemas/XMLSchema.xsd" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976813672" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/openapi.jar!/standardSchemas/xinclude.xsd" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976813673" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/relaxng.rng" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976813673" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/openapi.jar!/standardSchemas/xslt-1_0.xsd" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976813673" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/openapi.jar!/standardSchemas/XMLSchema-instance.xsd" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976813673" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/openapi.jar!/standardSchemas/xslt-2_0.xsd" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976813673" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/openapi.jar!/standardSchemas/xml.xsd" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976813673" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/openapi.jar!/standardSchemas/xhtml1-frameset.xsd" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976813673" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/openapi.jar!/standardSchemas/xhtml1-strict.xsd" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976813673" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/lib/openapi.jar!/standardSchemas/catalog.xsd" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976813673" ignored="false" />
-    <file path="$USER_HOME$/Library/Caches/PyCharm20/python_stubs/596071422/thread.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976857578" ignored="false" />
-    <file path="$USER_HOME$/Library/Caches/PyCharm20/python_stubs/596071422/errno.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976857578" ignored="false" />
-    <file path="$USER_HOME$/Library/Caches/PyCharm20/python_stubs/596071422/_collections.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976857578" ignored="false" />
-    <file path="$USER_HOME$/Library/Caches/PyCharm20/python_stubs/596071422/_weakref.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1371976857578" ignored="false" />
-    <file path="/base.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374349726733" ignored="false" />
-    <file path="/newtask.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373714140553" ignored="false" />
-    <file path="/newtask_head.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373709739586" ignored="false" />
-    <file path="/token-input-bootstrap.less" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1372787306212" ignored="false" />
-    <file path="/a.dummy" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373194111408" ignored="false" />
-    <file path="/variables.less" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373713383865" ignored="false" />
-    <file path="/common.less" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374350556855" ignored="false" />
-    <file path="/form_util.html" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373646722809" ignored="false" />
-    <file path="/bootstrap.less" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1373712907478" ignored="false" />
-    <file path="/project.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374329942370" ignored="false" />
-    <file path="/emailtask.py" changelist="04554822-171f-423b-a59e-87fa0a37af13" time="1374348341219" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,28 +262,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/do/templates/do/base.html">
+      <file leaf-file-name="app.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/do/static/do/app/scripts/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="26" selection-start="3561" selection-end="3574" vertical-scroll-proportion="-48.64">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="form_util.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/do/templates/do/form_util.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="20.4">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.less" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/do/static/do/less/common.less">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="288" column="21" selection-start="4427" selection-end="4427" vertical-scroll-proportion="-16.653847">
+            <state line="11" column="8" selection-start="244" selection-end="244" vertical-scroll-proportion="0.72727275" vertical-offset="0" max-vertical-offset="352">
               <folding />
             </state>
           </provider>
@@ -150,7 +274,7 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/do/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="25" selection-start="1237" selection-end="1237" vertical-scroll-proportion="-8.423077">
+            <state line="14" column="0" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="16" max-vertical-offset="3056">
               <folding>
                 <element signature="e#27#38#0" expanded="true" />
               </folding>
@@ -158,57 +282,75 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newtask_head.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/do/templates/do/newtask_head.html">
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="43.44">
+            <state line="8" column="4" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="320">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="task.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/do/models/task.py">
+      <file leaf-file-name="main.scss" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/do/static/do/app/styles/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="0" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.0">
+            <state line="13" column="16" selection-start="332" selection-end="332" vertical-scroll-proportion="-6.44" vertical-offset="47" max-vertical-offset="608">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/do/models/user.py">
+      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/do/templates/do/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="12" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+            <state line="64" column="25" selection-start="3794" selection-end="3794" vertical-scroll-proportion="-6.4" vertical-offset="864" max-vertical-offset="1248">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="emailtask.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/do/email/emailtask.py">
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="25" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0">
+            <state line="11" column="25" selection-start="181" selection-end="181" vertical-scroll-proportion="-7.04" vertical-offset="0" max-vertical-offset="2864">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="256">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/do/static/do/app/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="18" selection-start="402" selection-end="402" vertical-scroll-proportion="-5.12" vertical-offset="0" max-vertical-offset="1232">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/do/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="1" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="208">
               <folding>
-                <element signature="e#0#47#0" expanded="true" />
+                <element signature="e#23#65#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/do/templates/do/home.html">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/do/static/do/app/scripts/controllers/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="14" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.4090909">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="css_includes.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/do/templates/do/css_includes.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="2" column="21" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="256">
               <folding />
             </state>
           </provider>
@@ -238,27 +380,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/do/templates/do/newtask_head.html" />
-        <option value="$PROJECT_DIR$/do/models/product.py" />
-        <option value="$PROJECT_DIR$/do/static/do/bootstrap/less/bootstrap.less" />
-        <option value="$PROJECT_DIR$/do/static/do/font-awesome/less/variables.less" />
-        <option value="$PROJECT_DIR$/do/templates/do/newtask.html" />
+        <option value="$PROJECT_DIR$/do/templates/do/css_includes.html" />
+        <option value="$PROJECT_DIR$/do/static/do/app/partials/create.html" />
+        <option value="/Library/Python/2.7/site-packages/mongoengine/django/auth.py" />
+        <option value="$PROJECT_DIR$/do/static/do/app/services/items.js" />
+        <option value="$PROJECT_DIR$/do/static/do/app/do.js" />
+        <option value="$PROJECT_DIR$/do/static/do/app/controllers/controllers.js" />
         <option value="$PROJECT_DIR$/do/templates/do/newdoer.html" />
-        <option value="$PROJECT_DIR$/do/models/project.py" />
+        <option value="$PROJECT_DIR$/do/static/do/app/services/users.js" />
+        <option value="$PROJECT_DIR$/do/static/do/app/index.html" />
+        <option value="$PROJECT_DIR$/do/static/do/app/scripts/controllers/main.js" />
+        <option value="$PROJECT_DIR$/settings.py" />
         <option value="$PROJECT_DIR$/do/urls.py" />
-        <option value="$PROJECT_DIR$/do/models/user.py" />
-        <option value="$PROJECT_DIR$/do/email/__init__.py" />
+        <option value="$PROJECT_DIR$/urls.py" />
         <option value="$PROJECT_DIR$/do/views.py" />
-        <option value="$PROJECT_DIR$/do/models/task.py" />
-        <option value="$PROJECT_DIR$/do/email/emailtask.py" />
         <option value="$PROJECT_DIR$/do/templates/do/base.html" />
-        <option value="$PROJECT_DIR$/do/static/do/less/common.less" />
-        <option value="$PROJECT_DIR$/do/templates/do/home.html" />
+        <option value="$PROJECT_DIR$/do/static/do/app/scripts/app.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+    <option name="x" value="37" />
+    <option name="y" value="24" />
     <option name="width" value="1228" />
     <option name="height" value="710" />
   </component>
@@ -350,7 +493,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -380,12 +523,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="less" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common.less" />
-              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -409,40 +548,12 @@
               <option name="myItemId" value="do" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dolife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dolife" />
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="do" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dolife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dolife" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="do" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="email" />
+              <option name="myItemId" value="scripts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -452,11 +563,12 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="GoToFile.includeJavaFiles" value="true" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/do/email/emailtask.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
@@ -466,12 +578,10 @@
     <option name="myPythonConsoleState">
       <PyConsoleSettings />
     </option>
-    <option name="myDjangoConsoleState">
-      <PyConsoleSettings />
-    </option>
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/do/static/do/content" />
       <recent name="$PROJECT_DIR$/do/static/do/less" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -497,6 +607,31 @@
       <option name="OPTIONS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="dolife" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -511,6 +646,45 @@
       <option name="launchJavascriptDebuger" value="false" />
       <option name="browserUrl" value="" />
       <option name="additionalOptions" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="dolife" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="dolife" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="docs" factoryName="Docutils task">
@@ -529,23 +703,6 @@
       <option name="docutils_params" value="" />
       <option name="docutils_task" value="" />
       <option name="docutils_open_in_browser" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="dolife" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -569,6 +726,9 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
@@ -614,18 +774,24 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
-      <JSRemoteDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSRemoteDebuggerConfigurationSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="dolife" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
@@ -718,7 +884,23 @@
       <created>1373217422949</created>
       <updated>1373217422949</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Integrated with font-awesome and email.&#10;&#10;First trial of drag and drop interface using jquery.">
+      <created>1374351219623</created>
+      <updated>1374351219623</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Integrated with font-awesome and email.&#10;&#10;First trial of drag and drop interface using jquery.">
+      <created>1374351314253</created>
+      <updated>1374351314253</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Improved drag and drop of tasks.&#10;&#10;'Add Project' Dialog.">
+      <created>1374934664501</created>
+      <updated>1374934664501</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Drag and drop working good now. Task done workflow is done. Added few other icons.">
+      <created>1375638534611</created>
+      <updated>1375638534611</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -742,23 +924,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1228" height="710" extended-state="0" />
+    <frame x="37" y="24" width="1228" height="710" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19932432" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.5203252" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3260135" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32682925" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994923" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.6710311" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26311338" sideWeight="0.8006757" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5033784" sideWeight="0.8217905" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28175896" sideWeight="0.4796748" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34067798" sideWeight="0.8217905" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32711864" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3260135" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3219512" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3219512" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3243243" sideWeight="0.17820945" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32715008" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -769,58 +952,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_NEW_TODO" value="true" />
     <option name="myTodoPanelSettings">
-      <value>
-        <are-packages-shown value="false" />
-        <are-modules-shown value="false" />
-        <flatten-packages value="false" />
-        <is-autoscroll-to-source value="false" />
-      </value>
+      <TodoPanelSettings />
     </option>
-    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
-    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
-    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
-    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
-    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
-    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
-    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
-    <option name="SHORT_DIFF_HORIZONTALLY" value="true" />
-    <option name="SHORT_DIFF_EXTRA_LINES" value="2" />
-    <option name="SOFT_WRAPS_IN_SHORT_DIFF" value="true" />
-    <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
-    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
-    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
-    <option name="SHOW_DIRTY_RECURSIVELY" value="false" />
-    <option name="LIMIT_HISTORY" value="true" />
-    <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
-    <option name="UPDATE_FILTER_SCOPE_NAME" />
-    <option name="USE_COMMIT_MESSAGE_MARGIN" value="false" />
-    <option name="COMMIT_MESSAGE_MARGIN_SIZE" value="72" />
-    <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
-    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Common CSS converted to LESS format." />
-    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
-    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
-    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
-    <option name="ACTIVE_VCS_NAME" />
-    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
-    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
-    <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
-    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
-    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Create user page client side done." />
     <MESSAGE value="static files" />
     <MESSAGE value="Home page top bar" />
@@ -828,127 +962,128 @@
     <MESSAGE value="Cleaned up new task form" />
     <MESSAGE value="New task creation functionally complete." />
     <MESSAGE value="Common CSS converted to LESS format." />
+    <MESSAGE value="Integrated with font-awesome and email.&#10;&#10;First trial of drag and drop interface using jquery." />
+    <MESSAGE value="Improved drag and drop of tasks.&#10;&#10;'Add Project' Dialog." />
+    <MESSAGE value="Drag and drop working good now. Task done workflow is done. Added few other icons." />
+    <option name="LAST_COMMIT_MESSAGE" value="Drag and drop working good now. Task done workflow is done. Added few other icons." />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="27" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/do/email/emailtask.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="40" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///Library/Python/2.7/site-packages/mongoengine/document.py">
+    <entry file="file://$PROJECT_DIR$/do/templates/do/newproject.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="19" selection-start="2107" selection-end="2107" vertical-scroll-proportion="0.3320965">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/do/models/product.py">
+    <entry file="file://$PROJECT_DIR$/do/templates/do/css_includes.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="19" selection-start="180" selection-end="180" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#23#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/models/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="18" column="11" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.52554744" vertical-offset="0" max-vertical-offset="548">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/do/templates/do/newdoer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="60" selection-start="504" selection-end="504" vertical-scroll-proportion="-10.88">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/email/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/mongoengine/django/auth.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="201" column="6" selection-start="7772" selection-end="7772" vertical-scroll-proportion="-0.7894737">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/models/user.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="12" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/models/task.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="0" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/templates/do/css_includes.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/email/emailtask.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="25" selection-start="1480" selection-end="1480" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/templates/do/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="26" selection-start="3561" selection-end="3574" vertical-scroll-proportion="-48.64">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/templates/do/form_util.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="20.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/templates/do/newtask_head.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="43.44">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="25" selection-start="1237" selection-end="1237" vertical-scroll-proportion="-8.423077">
-          <folding>
-            <element signature="e#27#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/do/static/do/less/common.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="288" column="21" selection-start="4427" selection-end="4427" vertical-scroll-proportion="-16.653847">
+        <state line="7" column="52" selection-start="213" selection-end="213" vertical-scroll-proportion="0.1996435" vertical-offset="0" max-vertical-offset="1136">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/do/templates/do/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="14" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.4090909">
+        <state line="39" column="21" selection-start="1417" selection-end="1417" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/static/do/app/views/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="207" selection-end="207" vertical-scroll-proportion="-5.76" vertical-offset="0" max-vertical-offset="240">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/static/do/app/scripts/controllers/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="21" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="256">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/static/do/app/styles/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="16" selection-start="332" selection-end="332" vertical-scroll-proportion="-6.44" vertical-offset="47" max-vertical-offset="608">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="25" selection-start="181" selection-end="181" vertical-scroll-proportion="-7.04" vertical-offset="0" max-vertical-offset="2864">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="249" selection-end="249" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="256">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="4" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="320">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="1" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="208">
+          <folding>
+            <element signature="e#23#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="410" selection-end="410" vertical-scroll-proportion="0.0" vertical-offset="16" max-vertical-offset="3056">
+          <folding>
+            <element signature="e#27#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/static/do/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="18" selection-start="402" selection-end="402" vertical-scroll-proportion="-5.12" vertical-offset="0" max-vertical-offset="1232">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/templates/do/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="25" selection-start="3794" selection-end="3794" vertical-scroll-proportion="-6.4" vertical-offset="864" max-vertical-offset="1248">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/do/static/do/app/scripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="8" selection-start="244" selection-end="244" vertical-scroll-proportion="0.72727275" vertical-offset="0" max-vertical-offset="352">
           <folding />
         </state>
       </provider>

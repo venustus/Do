@@ -83,8 +83,6 @@ STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
-    'less.finders.LessFinder',
-    'compressor.finders.CompressorFinder',
 )
 
 # Make this unique, and don't share it with anybody.
@@ -122,9 +120,6 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
     'do',
-    'social_auth',
-    'less',
-    'compressor',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -152,16 +147,12 @@ LOGGING = {
 
 AUTHENTICATION_BACKENDS = (
     'mongoengine.django.auth.MongoEngineBackend',
-    'social_auth.backends.google.GoogleOAuth2Backend',
-    'social_auth.backends.twitter.TwitterBackend',
-    'social_auth.backends.facebook.FacebookBackend',
-    'social_auth.backends.google.GoogleBackend',
 )
 
 GOOGLE_OAUTH2_CLIENT_ID      = ''
 GOOGLE_OAUTH2_CLIENT_SECRET  = ''
 
-LOGIN_URL          = '/do/?login=true'
+LOGIN_URL          = '/do/login/'
 LOGIN_REDIRECT_URL = '/do/home/'
 LOGIN_ERROR_URL    = '/do/loginerror/'
 

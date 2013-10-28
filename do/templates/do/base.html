@@ -1,102 +1,72 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-    <title>{% block title %}{% endblock %}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
     {% load staticfiles %}
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-    <!-- jquery -->
-    <script src="{% static "do/js/jquery-1.9.1.js" %}"></script>
-    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-    <script src="{% static "do/js/jquery.validate.min.js" %}"></script>
-
-    <!-- bootstrap javascript begin -->
-    <!--
-    <script src="{% static "do/bootstrap3/js/bootstrap.min.js" %}"></script>
-    -->
-    <script src="{% static "do/bootstrap/js/bootstrap.min.js" %}"></script>
-
-    <!-- bootstrap datepicker -->
-    <script src="{% static "do/datepicker/js/bootstrap-datepicker.js" %}"></script>
-
-    <!-- jquery form plug-in -->
-    <script src="http://malsup.github.com/jquery.form.js"></script>
-
-    <!-- jquery token input plug-in -->
-    <script src="{% static "do/js/jquery.tokeninput.js" %}"></script>
-
-    <!-- jquery token-input -->
-    <link href="{% static "do/css/token-input.css" %}" rel="stylesheet" media="screen"/>
-    <!--  datepicker -->
-    <link href="{% static "do/datepicker/css/datepicker.css" %}" rel="stylesheet" media="screen"/>
-
-    {% include "do/css_includes.html" %}
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#doitdropdownlink").mouseenter(function () {
-                $("#doitdropdown").toggle();
-            });
-
-            $("#doitdropdown").mouseleave(function () {
-                $("#doitdropdown").toggle();
-            });
-        });
-    </script>
-    {% include "do/newtask_head.html" %}
-    {% include "do/newproject_head.html" %}
-    {% include "do/form_util.html" %}
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="{% static "do/app/styles/main.css" %}">
+        <!-- endbuild -->
 </head>
-<body>
-<div id="container" class="container">
-    <div id="header" class="row">
-        <div id="header_logo" class="span3">
-            <div class="dropdown">
-                <a id="doitdropdownlink" class="doitdropdown" href="#">
-                    <img src="{% static "do/images/do_logo_small.png" %}" alt="Do"/>
-                </a>
+  <body ng-app="doApp">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
-                <div class="submenu" id="doitdropdown">
-                    <ul class="root">
-                        <li>
-                            <a href="#new_task_modal" id="new_task_modal_button" role="button" data-toggle="modal">
-                                <i class="icon-chevron-right pull-right"></i>
-                                <i class="icon-pencil"></i>
-                                Task
-                            </a>
-                        </li>
-                        <li><a href="#new_task_bug"><i class="icon-chevron-right pull-right"></i><i
-                                class="icon-bug"></i> Issue</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div id="personal_space" class="span4">
-            <div id="welcome_note">
-                <p>
-                    Welcome {{ user.email }}
-                </p>
-            </div>
-            <div id="logout_link">
-                <p>
-                    <a href="{% url 'do:logout' %}">Logout</a>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="alert alert-success row" id="base_info" style="display: none;">
-        <button type="button" class="close">&times;</button>
-        <div id="base_msg"></div>
-    </div>
-    {% include "do/newtask.html" %}
-    <div id="main_contents" class="row">
-        {% block main_contents %}{% endblock %}
-    </div>
-    {% block footer %}{% endblock %}
-</div>
-{% block bodyendscript %}{% endblock %}
-<script type="text/javascript">
-    $('.alert .close').click(function (e) {
-        $(this).parent().hide();
-    });
-</script>
+    <!--[if lt IE 9]>
+      <script src="{% static "do/app/bower_components/es5-shim/es5-shim.js" %}"></script>
+      <script src="{% static "do/app/bower_components/json3/lib/json3.min.js" %}"></script>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <div class="container" ng-view=""></div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <script src="{% static "do/app/bower_components/jquery/jquery.js" %}"></script>
+    <script src="{% static "do/app/bower_components/angular/angular.js" %}"></script>
+
+        <!-- build:js scripts/plugins.js -->
+        <script src="{% static "do/app/bower_components/bootstrap-sass/js/bootstrap-affix.js" %}"></script>
+        <script src="{% static "do/app/bower_components/bootstrap-sass/js/bootstrap-alert.js" %}"></script>
+        <script src="{% static "do/app/bower_components/bootstrap-sass/js/bootstrap-dropdown.js" %}"></script>
+        <script src="{% static "do/app/bower_components/bootstrap-sass/js/bootstrap-tooltip.js" %}"></script>
+        <script src="{% static "do/app/bower_components/bootstrap-sass/js/bootstrap-modal.js" %}"></script>
+        <script src="{% static "do/app/bower_components/bootstrap-sass/js/bootstrap-transition.js" %}"></script>
+        <script src="{% static "do/app/bower_components/bootstrap-sass/js/bootstrap-button.js" %}"></script>
+        <script src="{% static "do/app/bower_components/bootstrap-sass/js/bootstrap-popover.js" %}"></script>
+        <script src="{% static "do/app/bower_components/bootstrap-sass/js/bootstrap-typeahead.js" %}"></script>
+        <script src="{% static "do/app/bower_components/bootstrap-sass/js/bootstrap-carousel.js" %}"></script>
+        <script src="{% static "do/app/bower_components/bootstrap-sass/js/bootstrap-scrollspy.js" %}"></script>
+        <script src="{% static "do/app/bower_components/bootstrap-sass/js/bootstrap-collapse.js" %}"></script>
+        <script src="{% static "do/app/bower_components/bootstrap-sass/js/bootstrap-tab.js" %}"></script>
+        <!-- endbuild -->
+
+        <!-- build:js scripts/modules.js -->
+        <script src="{% static "do/app/bower_components/angular-cookies/angular-cookies.js" %}"></script>
+        <script src="{% static "do/app/bower_components/angular-sanitize/angular-sanitize.js" %}"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="{% static "do/app/scripts/app.js" %}"></script>
+        <script src="{% static "do/app/scripts/controllers/main.js" %}"></script>
+        <!-- endbuild -->
 </body>
 </html>

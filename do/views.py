@@ -3,43 +3,18 @@
 import time
 import json
 from datetime import datetime
-from itertools import chain
 
 from django.http import HttpResponse, HttpResponseRedirect
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
-from mongoengine.queryset.queryset import Q
 from do.models.task import Task, TaskStatus
-from do.email.emailtask import EmailTask
 from do.models.user import Doer
 from do.models.project import Project
 
 
-@login_required
 def home(request):
-    try:
-        """
-        email_task_listener = EmailTaskListener('stbeehive.oracle.com', '993',
-                                                'venkata.pedapati@oracle.com', 'ZZOiTfByGX0o')
-        email_task_listener.get_email_one_day(request.user)
-        """
-        all_normal_tasks = Task.objects(
-            Q(assignees=request.user) & (Q(status=TaskStatus.IN_PROGRESS) | Q(status=TaskStatus.OVERDUE)))
-        all_email_tasks = EmailTask.objects.filter(assignees__contains=request.user)
-        try:
-            all_projects = Project.objects.filter(members__contains=request.user)
-        except Project.DoesNotExist:
-            all_projects = []
-    except Task.DoesNotExist:
-        return render(request, 'do/home.html', {'all_normal_tasks': [],
-                                                'all_email_tasks': [],
-                                                'all_projects': [],
-                                                'user': request.user})
-    return render(request, 'do/home.html', {'all_normal_tasks': all_normal_tasks,
-                                            'all_email_tasks': all_email_tasks,
-                                            'all_projects': all_projects,
-                                            'user': request.user})
+    return render(request, 'do/base.html')
 
 
 @login_required
@@ -54,15 +29,15 @@ def task_detail(request, task_id):
 @login_required
 def logout_view(request):
     logout(request)
-    return HttpResponseRedirect('/do/?login=true')
+    return HttpResponseRedirect('/do/login')
 
 
-def login_view(request):
+def login(request):
     try:
         username = request.POST['useremail_login']
         password = request.POST['password']
     except KeyError:
-        return render(request, 'do/newdoer.html', {'show_login_page': True})
+        return render(request, 'do/login.html')
     else:
         invalid_login = False
         user = authenticate(username=username, password=password)
@@ -75,37 +50,46 @@ def login_view(request):
                 user_account_disabled = True
         else:
             invalid_login = True
-        return render(request, 'do/newdoer.html', {'invalid_login': invalid_login,
-                                                   'user_account_disabled': user_account_disabled,
-                                                   'show_login_page': True})
+        return render(request, 'do/login.html', {'invalid_login': invalid_login,
+                                                 'user_account_disabled': user_account_disabled})
 
+def doesUserExist(request, useremail):
+    try:
+        responseData = dict()
+        responseData['user_exists'] = 'true'
+        try:
+            user = Doer.objects.get(email=useremail)
+            responseData['id'] = 1
+            return HttpResponse(json.dumps(responseData), mimetype='application/json')
+        except Doer.DoesNotExist:
+            responseData['user_exists'] = 'false'
+            responseData['id'] = 0
+            return HttpResponse(json.dumps(responseData), mimetype='application/json')
+    except KeyError:
+        return HttpResponse('Invalid request')
 
-def create_user(request):
+def signupAndLogin(request):
     try:
         username = request.POST['useremail']
         password = request.POST['password_first']
-        first_name, last_name = request.POST['doername'].split(' ', 1)
+        firstName, lastName = request.POST['doername'].split(' ', 1)
 
         try:
-            existing_user = Doer.objects.get(email=username)
-            response_data = dict()
-            response_data['user_exists'] = 'true'
-            response_data['user_email'] = existing_user.username
-            return HttpResponse(json.dumps(response_data), mimetype='application/json')
+            existingUser = Doer.objects.get(email=username)
+            responseData = dict()
+            responseData['user_exists'] = 'true'
+            responseData['user_email'] = existingUser.username
+            return HttpResponse(json.dumps(responseData), mimetype='application/json')
         except Doer.DoesNotExist:
             user = Doer.create_user(username, password, username)
-            user.first_name = first_name
-            user.last_name = last_name
+            user.first_name = firstName
+            user.last_name = lastName
             user.save()
             user = authenticate(username=username, password=password)
             login(request, user)
-            return HttpResponse('{user_exists: "false"}')
+            return HttpResponseRedirect('/do/')
     except KeyError:
-        try:
-            show_login_page = request.GET['login']
-        except KeyError:
-            return render(request, 'do/newdoer.html')
-        return render(request, 'do/newdoer.html', {'show_login_page': True})
+        return render(request, 'do/newdoer.html')
 
 
 @login_required

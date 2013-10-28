@@ -1,221 +1,66 @@
 <!doctype html>
-<html lang="us">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>Do it.</title>
     {% load staticfiles %}
     {% include "do/css_includes.html" %}
+    <script src="{% static "do/js/angular.min.js" %}"></script>
+    <script src="{% static "do/js/angular-resource.min.js" %}"></script>
+    <script src="{% static "do/app_bak/do.js" %}"></script>
+    <script src="{% static "do/app_bak/controllers/controllers.js" %}"></script>
+    <script src="{% static "do/app_bak/services/users.js" %}"></script>
 </head>
 
-<body>
-<div class="alert alert-danger" id="newdoer_info" style="display: none;">
-    <button type="button" class="close" data-dismiss="alert">&times;</button>
-    <div id="newdoer_msg"></div>
-</div>
-
-<div id="do_newdoer">
-    <div id="do_main_logo">
-        <img src="{% static "do/images/do_logo_2.png" %}" alt="Do"/>
+<body ng-app="doApp">
+    <div id="do_newdoer" ng-controller="UserController">
+        <div id="do_main_logo">
+            <img src="{% static "do/images/do_logo_2.png" %}" alt="Do"/>
+        </div>
+        <div id="do_main_signup_form">
+            <form id="signup_form" name="signup_form" ng-submit="submitForm();" method="post">
+                {% csrf_token %}
+                <input type="email"
+                       class="default_text"
+                       name="useremail" id="useremail"
+                       placeholder="email"
+                       ng-model="userEmail"
+                       unique-email
+                       required/>
+                <span class="form_error"
+                      ng-show="signup_form.useremail.$invalid">
+                    <span ng-show="signup_form.useremail.$error.email">Invalid e-mail address</span>
+                    <span ng-show="signup_form.useremail.$error.required">E-mail is required</span>
+                    <span ng-show="signup_form.useremail.$error.uniqueEmail">E-mail address already in use</span>
+                </span>
+                <br class="form_new_line"/>
+                <input type="text"
+                       class="default_text"
+                       name="doername"
+                       placeholder="your name"
+                       id="doername" required/>
+                <br class="form_new_line"/>
+                <input type="password"
+                       class="default_text"
+                       name="password_first"
+                       placeholder="password"
+                       id="password_first" required/>
+                <br class="form_new_line"/>
+                <input type="password"
+                       class="default_text"
+                       name="password_second"
+                       placeholder="confirm password"
+                       id="password_second" required/>
+                <br class="form_new_line"/>
+                <button class="btn btn-danger" id="doit" type="submit">
+                    start doing!
+                </button>
+                <p>
+                    already registered? <a href="#" class="sign_up_or_sign_in">sign in</a>
+                </p>
+            </form>
+        </div>
     </div>
-    <div id="do_main_signup_form">
-        <form action="{% url 'do:newdoer' %}" id="signup_form" method="post">
-            {% csrf_token %}
-            <input type="email"
-                   class="default_text"
-                   name="useremail" id="useremail"
-                   placeholder="email"
-                   required/>
-            <br class="form_new_line"/>
-            <input type="text"
-                   class="default_text"
-                   name="doername"
-                   placeholder="your name"
-                   id="doername" required/>
-            <br class="form_new_line"/>
-            <input type="password"
-                   class="default_text"
-                   name="password_first"
-                   placeholder="password"
-                   id="password_first" required/>
-            <br class="form_new_line"/>
-            <input type="password"
-                   class="default_text"
-                   name="password_second"
-                   placeholder="confirm password"
-                   id="password_second" required/>
-            <br class="form_new_line"/>
-            <button class="btn btn-danger" id="doit" type="submit">
-                start doing!
-            </button>
-            <p>
-                already registered? <a href="#" class="sign_up_or_sign_in">sign in</a>
-            </p>
-        </form>
-    </div>
-    <div id="do_main_login_form" style="display: none;">
-        <form action="{% url 'do:login' %}" id="login_form" method="post">
-            {% csrf_token %}
-            <input type="email"
-                   class="default_text"
-                   name="useremail_login" id="useremail_login"
-                   placeholder="email"
-                   required/>
-            <br class="form_new_line"/>
-            <input type="password"
-                   class="default_text"
-                   name="password"
-                   id="password" placeholder="password" required/>
-            <br class="form_new_line"/>
-            <button class="btn btn-danger" id="loginbutton" type="submit">
-                start doing!
-            </button>
-            <p>
-                new user? <a href="#" class="sign_up_or_sign_in">sign up</a>
-            </p>
-        </form>
-    </div>
-</div>
-<script src="{% static "do/js/jquery-1.9.1.js" %}"></script>
-<script src="{% static "do/js/jquery.validate.min.js" %}"></script>
-<script src="http://malsup.github.com/jquery.form.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $(".sign_up_or_sign_in").click(function (e) {
-            flipForms();
-        });
 
-        // form validation
-        var signup_form_validator = $("#signup_form").validate({
-            rules: {
-                useremail: {
-                    required: true,
-                    email: true
-                },
-                doername: {
-                    required: true
-                },
-                password_first: {
-                    required: true,
-                    minlength: 12
-                },
-                password_second: {
-                    required: true,
-                    minlength: 12,
-                    equalTo: "#password_first"
-                }
-            },
-            messages: {
-                useremail: {
-                    required: "Please enter a valid email address",
-                    minlength: "Please enter a valid email address"
-                },
-                doername: {
-                    required: "Enter your name"
-                },
-                password_first: {
-                    required: "Provide a password",
-                    minlength: jQuery.format("Enter at least {0} characters")
-                },
-                password_second: {
-                    required: "Repeat your password",
-                    minlength: jQuery.format("Enter at least {0} characters"),
-                    equalTo: "Enter the same password as above"
-                }
-            },
-            errorClass: "form_error",
-            debug: true,
-            ignore: ".ignore"
-        });
-
-        // form validation
-        var login_form_validator = $("#login_form").validate({
-            rules: {
-                useremail_login: {
-                    required: true,
-                    email: true
-                },
-                password: {
-                    required: true,
-                    minlength: 12
-                }
-            },
-            messages: {
-                useremail_login: {
-                    required: "Please enter a valid email address",
-                    minlength: "Please enter a valid email address"
-                },
-                password: {
-                    required: "Provide a password",
-                    minlength: jQuery.format("Enter at least {0} characters")
-                }
-            },
-            errorClass: "form_error",
-            debug: true,
-            ignore: ".ignore",
-            submitHandler: function (form) {
-                form.submit();
-            }
-        });
-
-        function flipForms() {
-            if ($("#do_main_signup_form").is(":visible")) {
-                $("#do_main_signup_form").hide();
-                $("#do_main_login_form").show();
-            }
-            else {
-                $("#do_main_signup_form").show();
-                $("#do_main_login_form").hide();
-            }
-        }
-
-        function checkExistingUser(data) {
-            if (data.user_exists == "true") {
-                $("#newdoer_info").show();
-                $("#newdoer_msg").html("You are already registered. Login using your password");
-                flipForms();
-            }
-            else {
-                window.location = "{% url 'do:home' %}";
-            }
-        }
-
-        var options = {
-            dataType: 'json',
-            target: '#newdoer_msg',   // target element(s) to be updated with server response
-            success: checkExistingUser
-            // other available options:
-            //url:       url         // override for form's 'action' attribute
-            //type:      type        // 'get' or 'post', override for form's 'method' attribute
-            //dataType:  null        // 'xml', 'script', or 'json' (expected server response type)
-            //clearForm: true        // clear all form fields after successful submit
-            //resetForm: true        // reset the form after successful submit
-            // $.ajax options can be used here too, for example:
-            //timeout:   3000
-        };
-
-        // bind to the form's submit event
-        $('#signup_form').submit(function () {
-            // inside event callbacks 'this' is the DOM element so we first
-            // wrap it in a jQuery object and then invoke ajaxSubmit
-            $(this).ajaxSubmit(options);
-
-            // !!! Important !!!
-            // always return false to prevent standard browser submit and page navigation
-            return false;
-        });
-
-        {% ifequal show_login_page True %}
-            flipForms();
-        {% endifequal %}
-        {% ifequal invalid_login True %}
-            $("#newdoer_info").show()
-            $("#newdoer_msg").html("Invalid email or password");
-        {% endifequal %}
-        {% ifequal user_account_disabled True %}
-            $("#newdoer_info").show()
-            $("#newdoer_msg").html("Your account is disabled. Please contact your administrator");
-        {% endifequal %}
-    });
-</script>
 </body>
 </html>
